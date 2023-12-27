@@ -7,7 +7,7 @@
   --heading-color: #fff;
   --btn-primary-bg: #379cf6;
   --btn-secondary-bg: #090238;
-
+  --harmburger-color: #fff;
   --team-card-bg: #1b2352;
   --link-color: #fff;
   --link-active: #379cf6;
@@ -65,6 +65,7 @@
   --card-bg: #fff;
   --testimonial-bg: #f7f7f7;
   --team-card-bg: #fff;
+  --harmburger-color: black;
 }
 
 * {

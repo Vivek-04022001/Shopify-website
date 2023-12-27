@@ -1,5 +1,6 @@
-import React, { useRef, useEffect } from "react";
-
+import React, { useRef, useEffect, useState } from "react";
+import Dark from "../../assets/Dark Mode.png";
+import Light from "../../assets/Light Mode.png";
 import "./header.css";
 
 const nav__links = [
@@ -27,7 +28,7 @@ const nav__links = [
 
 const Header = ({ theme, toggleTheme }) => {
   const headerRef = useRef(null);
-
+  const [hamburger, setHamburger] = useState(false);
   const menuRef = useRef(null);
 
   const headerFunc = () => {
@@ -60,14 +61,18 @@ const Header = ({ theme, toggleTheme }) => {
     });
   };
 
-  const toggleMenu = () => menuRef.current.classList.toggle("menu__active");
+  const toggleMenu = () => {
+    console.log(hamburger);
+    setHamburger((prev) => !prev);
+    menuRef.current.classList.toggle("menu__active");
+  };
 
   return (
     <header className="header" ref={headerRef}>
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <h2>Blueprint</h2>
+            <img src={theme === "light-theme" ? Light : Dark} alt="" />
           </div>
           {/* --navigation-- */}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
@@ -101,8 +106,10 @@ const Header = ({ theme, toggleTheme }) => {
             </span>
           </div>
 
-          <span className="mobile__menu" onClick={toggleMenu}>
-            <i class="ri-menu-line"></i>
+          <span className={`mobile__menu hamburger ${hamburger ? 'open' : ''}`} onClick={toggleMenu}>
+            <span class="hamburger-top"></span>
+            <span class="hamburger-middle"></span>
+            <span class="hamburger-bottom"></span>
           </span>
         </div>
       </div>
