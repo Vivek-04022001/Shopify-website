@@ -62,9 +62,17 @@ const Header = ({ theme, toggleTheme }) => {
   };
 
   const toggleMenu = () => {
-    console.log(hamburger);
+   
+   
     setHamburger((prev) => !prev);
     menuRef.current.classList.toggle("menu__active");
+    if (hamburger) {
+      // Menu is closing, remove overflow-hidden class
+      document.body.classList.remove('overflow-hidden');
+    } else {
+      // Menu is opening, add overflow-hidden class
+      document.body.classList.add('overflow-hidden');
+    }
   };
 
   return (
