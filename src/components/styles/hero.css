@@ -3,16 +3,13 @@
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
+  align-items:center;
+  
 }
 
-.hero__content,
-.hero__img {
-  width: 50%;
-}
 
-.hero__img img {
-  width: 100%;
-}
+
+
 
 .hero__content h2 {
   font-size: 3rem;

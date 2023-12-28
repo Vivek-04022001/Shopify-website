@@ -1,6 +1,6 @@
 import React, { useRef, useEffect, useState } from "react";
 import Dark from "../../assets/Dark Mode.png";
-import Light from "../../assets/Light Mode.png";
+
 import "./header.css";
 
 const nav__links = [
@@ -62,16 +62,14 @@ const Header = ({ theme, toggleTheme }) => {
   };
 
   const toggleMenu = () => {
-   
-   
     setHamburger((prev) => !prev);
     menuRef.current.classList.toggle("menu__active");
     if (hamburger) {
       // Menu is closing, remove overflow-hidden class
-      document.body.classList.remove('overflow-hidden');
+      document.body.classList.remove("overflow-hidden");
     } else {
       // Menu is opening, add overflow-hidden class
-      document.body.classList.add('overflow-hidden');
+      document.body.classList.add("overflow-hidden");
     }
   };
 
@@ -80,7 +78,7 @@ const Header = ({ theme, toggleTheme }) => {
       <div className="container">
         <div className="nav__wrapper">
           <div className="logo">
-            <img src={theme === "light-theme" ? Light : Dark} alt="" />
+            <img src={Dark} alt="" />
           </div>
           {/* --navigation-- */}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
@@ -99,22 +97,10 @@ const Header = ({ theme, toggleTheme }) => {
             </ul>
           </div>
 
-          {/* --light mode-- */}
-          <div className="light__mode">
-            <span onClick={toggleTheme}>
-              {theme === "light-theme" ? (
-                <span>
-                  <i class="ri-moon-line"></i>Dark
-                </span>
-              ) : (
-                <span>
-                  <i class="ri-sun-line"></i>Light
-                </span>
-              )}
-            </span>
-          </div>
-
-          <span className={`mobile__menu hamburger ${hamburger ? 'open' : ''}`} onClick={toggleMenu}>
+          <span
+            className={`mobile__menu hamburger ${hamburger ? "open" : ""}`}
+            onClick={toggleMenu}
+          >
             <span class="hamburger-top"></span>
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
