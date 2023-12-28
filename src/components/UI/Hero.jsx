@@ -26,11 +26,8 @@ const Hero = ({ theme }) => {
             </div>
           </div>
 
-          <div className="w-full md:mt-0 mt-10 md:w-1/2 flex flex-col overflow-hidden pr-4 ">
-            {/* <iframe
-              class="aspect-video  w-full "
-              src="https://www.youtube.com/embed/tgbNymZ7vqY"
-            ></iframe> */}
+          <div className="w-full md:mt-0 mt-10 md:w-1/2 flex flex-col border overflow-hidden ">
+            
             <iframe className="aspect-video" src="https://www.youtube.com/embed/fAi4N8i69kM?si=ccevi-Sg86XPxLZQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
              <div className="flex md:hidden w-full items-center justify-between  mt-16 px-8">
               <button className="primary__btn">Get Started Now</button>
