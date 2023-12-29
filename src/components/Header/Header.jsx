@@ -82,7 +82,7 @@ const Header = ({ theme, toggleTheme }) => {
           </div>
           {/* --navigation-- */}
           <div className="navigation" ref={menuRef} onClick={toggleMenu}>
-            <ul className="menu">
+            <ul className="flex items-center gap-10">
               {nav__links.map((item, index) => (
                 <li className="menu__item" key={index}>
                   <a

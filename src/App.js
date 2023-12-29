@@ -12,6 +12,7 @@ import Newsletter from "./components/UI/Newsletter";
 import Services from "./components/UI/Services";
 import Team from "./components/UI/Team";
 import Testimonials from "./components/UI/Testimonials";
+import Opportunity from "./components/UI/Opportunity";
 
 function App() {
   const [theme, setTheme] = useState("");
@@ -29,6 +30,7 @@ function App() {
       <Header theme={theme} toggleTheme={toggleTheme} />
       <Hero theme={theme} />
       <Counter />
+      <Opportunity/>
       <Services />
       <About />
       <Team />

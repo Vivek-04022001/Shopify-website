@@ -7,14 +7,15 @@
 
 /* css variables */
 :root {
-  --primary-color: #379cf6;
-  --heading-color: #fff;
-  --btn-primary-bg: #379cf6;
-  --btn-secondary-bg: #090238;
-  --harmburger-color: #fff;
-  --team-card-bg: #1b2352;
-  --link-color: #fff;
-  --link-active: #379cf6;
+--primary-color: #379cf6;        /* Primary Color: Dodger Blue */
+--heading-color: #fff;           /* Heading Color: White */
+--btn-primary-bg: #379cf6;       /* Button Primary Background: Dodger Blue */
+--btn-secondary-bg: #090238;     /* Button Secondary Background: Dark Blue */
+--hamburger-color: #fff;         /* Hamburger Color: White */
+--team-card-bg: #1b2352;         /* Team Card Background: Navy Blue */
+--link-color: #fff;              /* Link Color: White */
+--link-active: #379cf6;          /* Active Link Color: Dodger Blue */
+
 
   --card-bg: linear-gradient(
     to right,
