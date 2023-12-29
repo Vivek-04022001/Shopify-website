@@ -15,11 +15,11 @@ const Opportunity = () => {
             <img src={Img1} alt="" className="md:hidden w-full shadow-xl rounded-md"/>
             <img src={Img2} alt="" className="md:hidden w-full shadow-xl rounded-md"/>
           </div>
-          <div className=" max-w-3xl border-2 border-heading-color bg-heading-color  text-white text-xl text-center md:text-3xl font-bold  md:py-5 md:px-12 py-4 rounded-lg md:rounded-xl hover:bg-white hover:text-heading-color cursor-pointer
+          <div className="w-full md:max-w-3xl border-2 border-heading-color bg-heading-color  text-white text-xl text-center md:text-3xl font-bold  md:py-5 md:px-12 py-4 rounded-lg md:rounded-xl hover:bg-white hover:text-heading-color cursor-pointer
           
           transition-all duration-200 hover:translate-x-[-10px] hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none
           ">
-            <p className="tracking-wider ">
+            <p className="tracking-wider  ">
                 <span className="mr-2">✅</span>
                 Get Everything in Just $295
             </p>
