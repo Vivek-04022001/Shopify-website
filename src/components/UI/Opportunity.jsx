@@ -12,8 +12,8 @@ const Opportunity = () => {
           <div className="flex flex-col md:flex-row items-center gap-10 justify-between ">
             <TiltCard Img={Img1} />
             <TiltCard Img={Img2} />
-            <img src={Img1} alt="" className="w-full shadow-xl rounded-md"/>
-            <img src={Img2} alt="" className="w-full shadow-xl rounded-md"/>
+            <img src={Img1} alt="" className="md:hidden w-full shadow-xl rounded-md"/>
+            <img src={Img2} alt="" className="md:hidden w-full shadow-xl rounded-md"/>
           </div>
           <div className=" max-w-3xl border-2 border-heading-color bg-heading-color  text-white text-xl text-center md:text-3xl font-bold  md:py-5 md:px-12 py-4 rounded-lg md:rounded-xl hover:bg-white hover:text-heading-color cursor-pointer
           
@@ -78,17 +78,9 @@ const TiltCard = ({ Img }) => {
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="hidden md:block w-full md:w-1/2 rounded-xl "
+      className="hidden md:flex w-full md:w-1/2 rounded-xl "
     >
-      {/* <div
-        style={{
-          transform: "translateZ(75px)",
-          transformStyle: "preserve-3d",
-        }}
-        className="shadow-xl  p-4 rounded-md"
-      >
-        
-      </div> */}
+      
       <img src={Img} 
         style={{
             transform: "translateZ(30px)",
