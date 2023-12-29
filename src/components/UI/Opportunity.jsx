@@ -7,7 +7,7 @@ const Opportunity = () => {
   return (
     <section className="bg-white">
       <div className="container">
-        <div className="flex flex-col justify-center gap-5 md:gap-10">
+        <div className="flex flex-col items-center gap-5 md:gap-10">
           <h1 className="text-center text-black font-bold text-3xl md:text-6xl ">Hurry Up! Don't Miss The Opportunity.</h1>
           <div className="flex flex-col md:flex-row items-center gap-10 justify-between ">
             <TiltCard Img={Img1} />
