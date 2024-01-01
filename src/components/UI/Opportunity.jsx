@@ -5,25 +5,33 @@ import Img2 from "../../assets/productFinder.png";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 const Opportunity = () => {
   return (
-    <section className="bg-white">
+    <section className="">
       <div className="container">
         <div className="flex flex-col items-center gap-5 md:gap-10">
-          <h1 className="text-center text-black font-bold text-3xl md:text-6xl ">Hurry Up! Don't Miss The Opportunity.</h1>
+          
+          <h2 className="text-4xl text-center md:text-left md:text-5xl">
+          <span className="highlight">Hurry Up!</span> Don't Miss The Opportunity
+          </h2>
+         
+
           <div className="flex flex-col md:flex-row items-center gap-10 justify-between ">
             <TiltCard Img={Img1} />
             <TiltCard Img={Img2} />
-            <img src={Img1} alt="" className="md:hidden w-full shadow-xl rounded-md"/>
-            <img src={Img2} alt="" className="md:hidden w-full shadow-xl rounded-md"/>
+            <img
+              src={Img1}
+              alt=""
+              className="md:hidden w-full shadow-xl rounded-md"
+            />
+            <img
+              src={Img2}
+              alt=""
+              className="md:hidden w-full shadow-xl rounded-md"
+            />
           </div>
-          <div className="w-full md:max-w-3xl border-2 border-heading-color bg-heading-color  text-white text-xl text-center md:text-3xl font-bold  md:py-5 md:px-12 py-4 rounded-lg md:rounded-xl hover:bg-white hover:text-heading-color cursor-pointer
-          
-          transition-all duration-200 hover:translate-x-[-10px] hover:translate-y-[-4px] hover:shadow-[4px_4px_0px_black] active:translate-x-[0px] active:translate-y-[0px] active:rounded-2xl active:shadow-none
-          ">
-            <p className="tracking-wider  ">
-                <span className="mr-2">✅</span>
-                Get Everything in Just $295
-            </p>
-          </div>
+
+          <button className="bg-btn-secondary-bg border rounded-lg border-btn-primary-bg p-2 py-4 md:text-4xl text-xl w-full font-bold tracking-wide">
+            ✅ Get Everything in Just ₹295
+          </button>
         </div>
       </div>
     </section>
@@ -80,13 +88,13 @@ const TiltCard = ({ Img }) => {
       }}
       className="hidden md:flex w-full md:w-1/2 rounded-xl "
     >
-      
-      <img src={Img} 
+      <img
+        src={Img}
         style={{
-            transform: "translateZ(30px)",
-          }}
-          className="shadow-xl rounded-md"
-        />
+          transform: "translateZ(30px)",
+        }}
+        className="shadow-xl rounded-md"
+      />
     </motion.div>
   );
 };

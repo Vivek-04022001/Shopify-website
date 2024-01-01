@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "primary-color": "#379cf6", // dodger blue
         "btn-secondary-bg": "#090238", // dark Blue
+        'btn-primary-bg': '#379cf6',   
         "team-card-bg": "#1b2352", //Navy Blue
         "link-active": "#379cf6", //Blue
         "body-bg": "#00000d", // midnight blue
