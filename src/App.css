@@ -59,12 +59,10 @@ body {
   @apply bg-backgroundColor;
 }
 
-a {
-  @apply text-base;
-}
+
 
 .Container {
-  @apply container max-w-6xl mx-auto px-6 mb-20;
+  @apply container max-w-6xl mx-auto px-6 mb-16 py-4;
 }
 
 .heading{
@@ -72,14 +70,38 @@ a {
 }
 
 .heading-md {
-  @apply text-4xl font-extrabold max-w-3xl mx-auto text-center;
+  @apply text-5xl font-extrabold max-w-3xl mx-auto text-center;
 }
 
 .heading-lg{
-  @apply text-5xl font-bold
+  @apply text-6xl font-bold
 }
 
+/* text-gradient */
 .counter-gradient{
   @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 !important;
 }
 
+
+
+/* only gradient */
+.newsletter-gradient{
+  @apply bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400
+}
+
+.normal-gradient{
+  @apply bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 
+}
+
+.card-gradient{
+  @apply bg-gradient-to-r from-indigo-800 via-blue-700 to-blue-500
+}
+
+
+.highlight {
+  @apply text-primary
+}
+
+.text-clip{
+  @apply bg-clip-text text-transparent
+}

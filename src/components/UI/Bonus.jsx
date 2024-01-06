@@ -1,65 +1,52 @@
-import canvaProductImage from '../../assets/Product mocups/CanvaTemplate.png'
+import ChipTabs from "../Utilities/ChipTabs";
+import Cards from "../Utilities/Cards.jsx";
+import { useContext, useState, useEffect } from "react";
+import { CardContext } from "../../context/CardContext.js";
+
+const priceTag = [
+  {
+    title: "Mega",
+    price: "₹7899",
+  },
+  {
+    title: "Pro",
+    price: "₹12499",
+  },
+  {
+    title: "Arsenal",
+    price: "₹18890",
+  },
+];
 
 const Bonus = () => {
+  const { selectedBonusTab } = useContext(CardContext);
+  const [worth, setWorth] = useState(priceTag[1].price)
+  const handlePrice = ()=>{
+    priceTag.forEach((element) =>{
+        if(element.title === selectedBonusTab )
+        setWorth(element.price)
+    })
+  }
+  useEffect(()=>{
+    handlePrice()
+  },[selectedBonusTab])
+
   return (
-    <section>
-        <div className="Container">
-            <h2 className='heading text-white capitalize'>what will you get in this <span className='text-primary-color '>ultimate social media kit ?</span></h2>
-
-            {/* bonus- container */}
-            <div className='flex flex-col gap-y-10 justify-center  mt-10'>
-
-                {/* first product */}
-                <div className='border-4 border-dashed  py-10  flex items-center justify-between px-12'>
-                    {/* image of the product */}
-                    <img src={canvaProductImage} alt="canva-product" className='w-[32%]  '/>
-                    {/* product content */}
-                    <div className='flex flex-col gap-y-10 capitalize'>
-                        <h3 className='text-primary-color text-4xl text-center font-extrabold'>OFFER #1:</h3>
-                        <p className='text-4xl font-extrabold text-white text-center'>17000+ EDITABLE VIRAL REELS</p>
-                        <p className='text-2xl font-bold text-white'>📍reach milions of audience without spending money</p>
-                        <p className='text-2xl font-bold text-white'>❌reach milions of audience without spending money</p>
-                        <p className='text-2xl font-bold text-white'>✅reach milions of audience without spending money</p>
-                    </div>
-                </div>
-
-                {/* second product */}
-                <div className='border-4 border-dashed  py-10  flex items-center justify-between px-12'>
-                    {/* image of the product */}
-                    <img src={canvaProductImage} alt="canva-product" className='w-[32%]  '/>
-                    {/* product content */}
-                    <div className='flex flex-col gap-y-10 capitalize'>
-                        <h3 className='text-primary-color text-4xl text-center font-extrabold'>OFFER #1:</h3>
-                        <p className='text-4xl font-extrabold text-white text-center'>17000+ EDITABLE VIRAL REELS</p>
-                        <p className='text-2xl font-bold text-white'>📍reach milions of audience without spending money</p>
-                        <p className='text-2xl font-bold text-white'>❌reach milions of audience without spending money</p>
-                        <p className='text-2xl font-bold text-white'>✅reach milions of audience without spending money</p>
-                    </div>
-                </div>
-
-                {/* third product */}
-                <div className='border-4 border-dashed  py-10  flex items-center justify-between px-12'>
-                    {/* image of the product */}
-                    <img src={canvaProductImage} alt="canva-product" className='w-[32%]  '/>
-                    {/* product content */}
-                    <div className='flex flex-col gap-y-10 capitalize'>
-                        <h3 className='text-primary-color text-4xl text-center font-extrabold'>OFFER #1:</h3>
-                        <p className='text-4xl font-extrabold text-white text-center'>17000+ EDITABLE VIRAL REELS</p>
-                        <p className='text-2xl font-bold text-white'>📍reach milions of audience without spending money</p>
-                        <p className='text-2xl font-bold text-white'>❌reach milions of audience without spending money</p>
-                        <p className='text-2xl font-bold text-white'>✅reach milions of audience without spending money</p>
-                    </div>
-                </div>
-            </div>
-
-            <button className="inline-block group bg-btn-primary-bg border rounded-lg p-2 py-4 md:text-4xl text-xl w-full md:w-[60%] font-bold tracking-wide hover:text-btn-primary-bg hover:bg-white border-btn-primary-bg mx-auto text-center capitalize">
-            <a href="#" className='group-hover:text-btn-primary-bg'>
-                Boost your store today
-            </a>
-          </button>
+    <section id="bonus">
+      <div className="Container">
+        <div className="flex flex-col items-center  gap-5 md:gap-10 mt-20">
+          <h2 className="heading heading-md">
+            Unlock <span className="highlight">Bonuse</span> Worth
+            <span className="bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 text-white rounded-md px-2 mx-4  border-white">{worth}</span> If You
+            Enroll Today
+          </h2>
+          <h2 className="text-xl highlight font-bold">Our Bonus</h2>
+          <ChipTabs type={"bonus"} />
+          <Cards type={"bonus"} />
         </div>
+      </div>
     </section>
-  )
-}
+  );
+};
 
-export default Bonus
+export default Bonus;

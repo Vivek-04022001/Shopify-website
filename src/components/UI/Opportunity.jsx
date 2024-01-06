@@ -1,19 +1,17 @@
-import React from "react";
-import "../styles/opportunity.css";
 import Img1 from "../../assets/Img-1.png";
 import Img2 from "../../assets/Img-2.png";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 const Opportunity = () => {
   return (
-    <section >
+    <section id="opportunity">
       <div className="Container">
         <div className="flex flex-col items-center  gap-5 md:gap-10">
-          <h2 className="heading">
+          <h2 className="heading heading-md">
             <span className="highlight">Hurry Up!</span> Don't Miss The
             Opportunity
           </h2>
 
-          <div className="flex flex-col md:flex-row items-center gap-10 justify-between ">
+          <div className="flex flex-col md:flex-row items-center gap-8 justify-between ">
             <TiltCard Img={Img1} />
             <TiltCard Img={Img2} />
             <img
@@ -28,8 +26,10 @@ const Opportunity = () => {
             />
           </div>
 
-          <button className="bg-btn-secondary-bg border rounded-lg border-btn-primary-bg p-2 py-4 md:text-4xl text-xl w-full md:w-[60%] font-bold tracking-wide">
-            ✅ Get Everything in Just ₹295
+          <button className="bg-secondary w-[55%] py-10  font-bold border-4 border-dashed text-white hover:bg-white text-3xl hover:text-secondary transition-all duration-300">
+            <a href="#" className="">
+              ✅ Get Everything in Just ₹295
+            </a>
           </button>
         </div>
       </div>
@@ -85,14 +85,14 @@ const TiltCard = ({ Img }) => {
         rotateX,
         transformStyle: "preserve-3d",
       }}
-      className="hidden md:flex w-full md:w-1/2 rounded-xl "
+      className="hidden md:flex w-full md:w-1/2  "
     >
       <img
         src={Img}
         style={{
           transform: "translateZ(30px)",
         }}
-        className="shadow-xl rounded-md"
+        className="max-w-[100%]"
       />
     </motion.div>
   );

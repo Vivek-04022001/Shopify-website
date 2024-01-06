@@ -15,7 +15,7 @@ const Hero = () => {
   return (
     <section className="'hero__section" id="home">
       <div className="Container">
-        <div className="flex flex-col items-center md:items-start md:flex-row md:justify-between py-4">
+        <div className="flex flex-col items-center md:items-start md:flex-row md:justify-between ">
           {/* hero-heading */}
           <div className="w-full md:w-1/2 text-left">
             <div className="space-y-2 heading heading-lg">

@@ -15,7 +15,9 @@ import Testimonials from "./components/UI/Testimonials";
 import Opportunity from "./components/UI/Opportunity";
 import Bonus from "./components/UI/Bonus";
 
+
 import ShiftingCountdown from "./components/UI/ShiftingCountdown";
+import Offers from "./components/UI/Offers";
 
 function App() {
  
@@ -25,8 +27,10 @@ function App() {
       <Header  />
       <Hero  />
       <ShiftingCountdown/>
-      <Opportunity/>
+      <Offers/>
       <Bonus/>
+      {/* <Opportunity/> */}
+     
       {/* <Services />
       <About />
       <Team />

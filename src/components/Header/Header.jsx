@@ -52,7 +52,7 @@ const Header = ({ theme, toggleTheme }) => {
 
   return (
     <header ref={headerRef} className="">
-      <div className="Container py-8 ">
+      <div className="Container  ">
         <div className="flex items-center justify-between ">
           <div className="w-[150px] ">
             <img src={Logo} alt="logo" className="w-full" />
