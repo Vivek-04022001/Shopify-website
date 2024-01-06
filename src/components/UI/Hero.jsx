@@ -10,31 +10,26 @@ const Hero = () => {
   const videoUrl =
     "https://www.youtube.com/embed/fAi4N8i69kM?si=ccevi-Sg86XPxLZQ";
 
-    const videoId = videoUrl.split('/').pop().split('?')[0];
+  const videoId = videoUrl.split("/").pop().split("?")[0];
 
   return (
     <section className="'hero__section" id="home">
       <div className="Container">
-        <div className="flex flex-col items-center md:items-start md:flex-row md:justify-between ">
+        <div className="flex flex-col justify-center md:flex-row md:items-start  md:justify-between ">
           {/* hero-heading */}
-          <div className="w-full md:w-1/2 text-left">
-            <div className="space-y-2 heading heading-lg">
-              <h2>We 're Creating Perfect</h2>
-              <h2>Digital Products To</h2>
-              <h2 className=" text-primary">Promote Your Brand</h2>
+          <div className="w-full text-left md:w-1/2">
+            <div className="heading heading-lg space-y-2">
+              <h2 className="highlight">Shopify Mega Bundle</h2>
+              <h2>The Only Bundle You'll Ever Need</h2>
             </div>
-            <p className="mt-16 text-md w-[80%] text-smallText">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
-              quis optio reprehenderit. Officiis, adipisci iusto!
+            <p className="text-md mt-8 w-[100%] text-slate-300">
+              Introducing the "Shopify Mega Bundle": A comprehensive solution
+              for dropshipping success and opening up additional income
+              opportunities.
             </p>
-
-            <div className="hidden md:flex w-full items-center gap-10  mt-10">
-              <button className="primary__btn">Get Started Now</button>
-              <button className="secondary__btn">Discover More</button>
-            </div>
           </div>
 
-          <div className="w-full md:mt-0 mt-10 md:w-1/2 flex flex-col  overflow-hidden ">
+          <div className=" mt-10 flex w-full flex-col overflow-hidden border border-black md:mt-0 md:w-1/2">
             {/* <iframe
               className="aspect-video"
               src="https://www.youtube.com/embed/fAi4N8i69kM?si=ccevi-Sg86XPxLZQ"
@@ -48,10 +43,6 @@ const Hero = () => {
               opts={videoOpts}
               className="responsive-video"
             />
-            <div className="flex md:hidden w-full items-center justify-between  mt-16 px-8">
-              <button className="primary__btn">Get Started Now</button>
-              <button className="secondary__btn">Discover More</button>
-            </div>
           </div>
         </div>
       </div>

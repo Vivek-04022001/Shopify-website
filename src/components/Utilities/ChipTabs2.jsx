@@ -2,41 +2,27 @@ import { motion } from "framer-motion";
 import { useState, useContext, useEffect } from "react";
 import { CardContext } from "../../context/CardContext";
 
-const ChipTabs = ({ type }) => {
-  const {
-    productTabs,
-    bonusTabs,
-    setSelectedProductTab,
-    setSelectedBonusTab,
-    selectedBonusTab,
-    selectedProductTab,
-  } = useContext(CardContext);
+const ChipTabs2 = () => {
+  const { bonusTabs, setSelectedBonusTab , selectedBonusTab} = useContext(CardContext);
 
-  const [tabs, setTabs] = useState(() => {
-    if (type === "products") return productTabs;
-    else return bonusTabs;
-  });
+  const tabs = bonusTabs;
 
-  const [selected, setSelected] = useState(() => {
-    if (type === "products") return selectedProductTab;
-    else return selectedBonusTab;
-  });
-
+  const [selected, setSelected] = useState("Pro");
   const handleSetSelectedTab = () => {
-    type === "products"
-      ? setSelectedProductTab(selected)
-      : setSelectedBonusTab(selected);
+    setSelectedBonusTab(selected);
+    
   };
 
   useEffect(() => {
     handleSetSelectedTab();
-  }, [selected, type]);
+  }, [selected]);
+
   return (
-    <div className="grid w-full grid-cols-3  items-center justify-center gap-4 text-lg  md:gap-12 md:text-2xl">
+    <div className="grid w-full grid-cols-3 items-center justify-center gap-4 text-lg  md:gap-12 md:text-2xl">
       {tabs.map((tab) => (
         <Chip
           text={tab}
-          selected={selected === tab}
+          selected={selectedBonusTab === tab}
           setSelected={setSelected}
           key={tab}
         />
@@ -49,7 +35,6 @@ const Chip = ({ text, selected, setSelected }) => {
   return (
     <button
       onClick={() => setSelected(text)}
-      aria-pressed={selected}
       className={`${
         selected
           ? "text-white"
@@ -68,4 +53,4 @@ const Chip = ({ text, selected, setSelected }) => {
   );
 };
 
-export default ChipTabs;
+export default ChipTabs2;
