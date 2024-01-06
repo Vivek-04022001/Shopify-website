@@ -1,18 +1,17 @@
 import React from "react";
 import "../styles/opportunity.css";
-import Img1 from "../../assets/profit&loss.png";
-import Img2 from "../../assets/productFinder.png";
+import Img1 from "../../assets/Img-1.png";
+import Img2 from "../../assets/Img-2.png";
 import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 const Opportunity = () => {
   return (
-    <section className="">
-      <div className="container">
-        <div className="flex flex-col items-center gap-5 md:gap-10">
-          
-          <h2 className="text-4xl text-center md:text-left md:text-5xl">
-          <span className="highlight">Hurry Up!</span> Don't Miss The Opportunity
+    <section >
+      <div className="Container">
+        <div className="flex flex-col items-center  gap-5 md:gap-10">
+          <h2 className="heading">
+            <span className="highlight">Hurry Up!</span> Don't Miss The
+            Opportunity
           </h2>
-         
 
           <div className="flex flex-col md:flex-row items-center gap-10 justify-between ">
             <TiltCard Img={Img1} />
@@ -29,7 +28,7 @@ const Opportunity = () => {
             />
           </div>
 
-          <button className="bg-btn-secondary-bg border rounded-lg border-btn-primary-bg p-2 py-4 md:text-4xl text-xl w-full font-bold tracking-wide">
+          <button className="bg-btn-secondary-bg border rounded-lg border-btn-primary-bg p-2 py-4 md:text-4xl text-xl w-full md:w-[60%] font-bold tracking-wide">
             ✅ Get Everything in Just ₹295
           </button>
         </div>

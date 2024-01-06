@@ -3,10 +3,8 @@
 .hero__wrapper {
   display: flex;
   justify-content: space-between;
-  align-items:center;
-  
+  align-items: center;
 }
-
 
 .hero__content h2 {
   font-size: 3rem;
@@ -35,21 +33,15 @@
 
 .primary__btn,
 .secondary__btn {
-  padding: 0.8rem 1.5rem;
-  border: none;
-  outline: none;
-  color: #fff;
-  border-radius: 0.4rem;
-  cursor: pointer;
+  @apply py-3 px-6  outline-none text-white rounded-md cursor-pointer;
 }
 
 .primary__btn {
-  background: var(--btn-secondary-bg);
-  border: 1px solid var(--btn-primary-bg);
+  @apply bg-secondary border border-primary;
 }
 
 .secondary__btn {
-  background: var(--btn-primary-bg);
+  @apply bg-primary;
 }
 
 @media only screen and (max-width: 992px) {
@@ -88,4 +80,17 @@
   .hero__wrapper {
     flex-direction: column;
   }
+}
+
+
+
+/* Apply a 16:9 aspect ratio to the container */
+.responsive-video {
+  @apply aspect-video
+}
+
+/* Set the iframe inside the container to take up the full space */
+.responsive-video iframe {
+  width: 100%;
+  height: 100%;
 }

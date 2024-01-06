@@ -7,16 +7,15 @@
 
 /* css variables */
 :root {
---primary-color: #379cf6;        /* Primary Color: Dodger Blue */
---heading-color: #fff;           /* Heading Color: White */
---btn-primary-bg: #379cf6;       /* Button Primary Background: Dodger Blue */
---btn-secondary-bg: #090238;     /* Button Secondary Background: Dark Blue */
---hamburger-color: #fff;         /* Hamburger Color: White */
---team-card-bg: #1b2352;         /* Team Card Background: Navy Blue */
---link-color: #fff;              /* Link Color: White */
---link-active: #379cf6;          /* Active Link Color: Dodger Blue */
-
-
+  --primary-color: #379cf6; /* Primary Color: Dodger Blue */
+  --heading-color: #fff; /* Heading Color: White */
+  --btn-primary-bg: #379cf6; /* Button Primary Background: Dodger Blue */
+  --btn-secondary-bg: #090238; /* Button Secondary Background: Dark Blue */
+  --hamburger-color: #fff; /* Hamburger Color: White */
+  --team-card-bg: #1b2352; /* Team Card Background: Navy Blue */
+  --link-color: #fff; /* Link Color: White */
+  --link-active: #379cf6; /* Active Link Color: Dodger Blue */
+  --body-bg: #00000d;
   --card-bg: linear-gradient(
     to right,
     #1a11e7,
@@ -33,7 +32,7 @@
     rgba(35, 93, 173, 1) 75%
   );
 
-  --body-bg: #00000d;
+ 
 
   --newsletter-bg: linear-gradient(
     to right top,
@@ -49,30 +48,6 @@
   --small-text-color: rgba(255, 255, 255, 0.774);
   --icon-bg: #151e4f;
 }
-
-.light-theme {
-  --body-bg: rgb(255, 255, 255);
-  --heading-color: #0c123d;
-  --btn-secondary-bg: #816aff;
-  --btn-primary-bg: #fff;
-  --primary-color: #816aff;
-  --counter-color: #fff;
-  --counter-section-bg: #816aff;
-  --link-color: #0c123d;
-  --link-active: #816aff;
-  --newsletter-bg: linear-gradient(
-    180deg,
-    rgba(189, 243, 255, 1) 29%,
-    rgba(193, 243, 255, 1) 50%,
-    rgba(226, 250, 255, 1) 78%
-  );
-  --small-text-color: #000;
-  --card-bg: #fff;
-  --testimonial-bg: #f7f7f7;
-  --team-card-bg: #fff;
-  --harmburger-color: black;
-}
-
 * {
   padding: 0;
   margin: 0;
@@ -81,70 +56,30 @@
 }
 
 body {
-  background: var(--body-bg);
-  font-family: var(--font-name);
+  @apply bg-backgroundColor;
 }
 
 a {
-  text-decoration: none;
-  color: var(--link-color);
+  @apply text-base;
 }
 
-h1,
-h2 {
-  color: var(--heading-color);
-  font-size: 2rem;
+.Container {
+  @apply container max-w-6xl mx-auto px-6 mb-20;
 }
 
-section {
-  padding: 60px 0px;
+.heading{
+  @apply text-white
 }
 
-.container {
-  width: 1140px;
-  padding: 0px 15px;
-  margin: auto;
+.heading-md {
+  @apply text-4xl font-extrabold max-w-3xl mx-auto text-center;
 }
 
-.description {
-  color: var(--small-text-color);
-  line-height: 30px;
-  font-size: 0.9rem;
+.heading-lg{
+  @apply text-5xl font-bold
 }
 
-.subtitle {
-  font-size: 1rem;
-  color: var(--primary-color);
-  font-weight: 400;
-  margin-bottom: 20px;
+.counter-gradient{
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 !important;
 }
 
-.light-theme .counter {
-  background: var(--counter-section-bg);
-}
-
-.light-theme .secondary btn {
-  border: 1px solid var(--primary-color);
-  color: #090238;
-  font-weight: 600;
-}
-
-.light-theme a {
-  font-weight: 500;
-}
-
-.light-theme .team__img {
-  background: #ddd;
-}
-
-@media only screen and (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 768px) {
-  section {
-    padding: 40px 0px;
-  }
-}

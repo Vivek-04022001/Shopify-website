@@ -1,30 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
-import Dark from "../../assets/Dark Mode.png";
+import Logo from "../../assets/Dark Mode.png";
 
 import "./header.css";
-
-const nav__links = [
-  {
-    path: "#home",
-    display: "Home",
-  },
-  {
-    path: "#about",
-    display: "About",
-  },
-  {
-    path: "#service",
-    display: "Service",
-  },
-  {
-    path: "#projects",
-    display: "Projects",
-  },
-  {
-    path: "#blog",
-    display: "Blog",
-  },
-];
 
 const Header = ({ theme, toggleTheme }) => {
   const headerRef = useRef(null);
@@ -74,37 +51,49 @@ const Header = ({ theme, toggleTheme }) => {
   };
 
   return (
-    <header className="header" ref={headerRef}>
-      <div className="container">
-        <div className="nav__wrapper">
-          <div className="logo">
-            <img src={Dark} alt="" />
+    <header ref={headerRef} className="">
+      <div className="Container py-8 ">
+        <div className="flex items-center justify-between ">
+          <div className="w-[150px] ">
+            <img src={Logo} alt="logo" className="w-full" />
           </div>
           {/* --navigation-- */}
-          <div className="navigation" ref={menuRef} onClick={toggleMenu}>
-            <ul className="flex items-center gap-10">
-              {nav__links.map((item, index) => (
-                <li className="menu__item" key={index}>
-                  <a
-                    href={item.path}
-                    onClick={handleClick}
-                    className="menu__link"
-                  >
-                    {item.display}
-                  </a>
-                </li>
-              ))}
+          <div ref={menuRef} onClick={toggleMenu} className="navigation">
+            <ul className="hidden md:flex items-center gap-10 text-white">
+              <li  className="hover:text-primary duration-300 transition-all">
+                <a href="#">Home</a>
+              </li>
+              <li className="hover:text-primary duration-300 transition-all">
+                <a href="#">About</a>
+              </li>
+              <li className="hover:text-primary duration-300 transition-all">
+                <a href="#">Service</a>
+              </li>
             </ul>
           </div>
 
           <span
-            className={`mobile__menu hamburger ${hamburger ? "open" : ""}`}
+            className={`block md:hidden hamburger  ${hamburger ? "open" : ""}`}
             onClick={toggleMenu}
           >
             <span class="hamburger-top"></span>
             <span class="hamburger-middle"></span>
             <span class="hamburger-bottom"></span>
           </span>
+        </div>
+
+        {/* mobile menu */}
+        <div
+          id="menu"
+          class={`${
+            hamburger ? "flex" : "hidden"
+          } md:hidden absolute top-0 bottom-0 left-0 flex flex-col  self-end  w-full min-h-screen  pt-32 pl-20 space-y-8  text-red-500 uppercase bg-dark`}
+        >
+          <a href="#">About</a>
+          <a href="#">Careers</a>
+          <a href="#">Events</a>
+          <a href="#">Products</a>
+          <a href="#">Support</a>
         </div>
       </div>
     </header>

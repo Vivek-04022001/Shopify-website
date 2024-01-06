@@ -6,38 +6,34 @@ import Footer from "./components/Footer/Footer";
 import Header from "./components/Header/Header";
 import About from "./components/UI/About";
 import Blog from "./components/UI/Blog";
-import Counter from "./components/UI/Counter";
+
 import Hero from "./components/UI/Hero";
 import Newsletter from "./components/UI/Newsletter";
 import Services from "./components/UI/Services";
 import Team from "./components/UI/Team";
 import Testimonials from "./components/UI/Testimonials";
 import Opportunity from "./components/UI/Opportunity";
+import Bonus from "./components/UI/Bonus";
+
+import ShiftingCountdown from "./components/UI/ShiftingCountdown";
 
 function App() {
-  const [theme, setTheme] = useState("");
-
-  const toggleTheme = () => {
-    theme === "" ? setTheme("light-theme") : setTheme("");
-  };
-
-  useEffect(() => {
-    document.body.className = theme;
-  }, [theme]);
+ 
 
   return (
     <>
-      <Header theme={theme} toggleTheme={toggleTheme} />
-      <Hero theme={theme} />
-      <Counter />
+      <Header  />
+      <Hero  />
+      <ShiftingCountdown/>
       <Opportunity/>
-      <Services />
+      <Bonus/>
+      {/* <Services />
       <About />
       <Team />
       <Blog />
       <Testimonials />
       <Newsletter />
-      <Footer />
+      <Footer /> */}
     </>
   );
 }
