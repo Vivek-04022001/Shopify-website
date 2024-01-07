@@ -1,4 +1,4 @@
-import ChipTabs from "../Utilities/ChipTabs";
+import ChipTabsBonus from '../Utilities/ChipTabsBonus.jsx'
 import Cards from "../Utilities/Cards.jsx";
 import { useContext, useState, useEffect } from "react";
 import { CardContext } from "../../context/CardContext.js";
@@ -41,7 +41,7 @@ const Bonus = () => {
             Enroll Today
           </h2>
           <h2 className="text-xl highlight font-bold">Our Bonus</h2>
-          <ChipTabs type={"bonus"} />
+          <ChipTabsBonus  />
           <Cards type={"bonus"} />
         </div>
       </div>

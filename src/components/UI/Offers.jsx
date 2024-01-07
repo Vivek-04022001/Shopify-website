@@ -1,4 +1,5 @@
-import ChipTabs from "../Utilities/ChipTabs";
+import ChipTabsProduct from '../Utilities/ChipTabsProduct.jsx'
+
 import Cards from "../Utilities/Cards.jsx";
 const Offers = () => {
   return (
@@ -10,7 +11,7 @@ const Offers = () => {
             <span className="highlight">Hurry Up!</span> Don't Miss The
             Opportunity
           </h2>
-          <ChipTabs type={'products'}/>
+          <ChipTabsProduct />
           <Cards type={'products'}/>
         </div>
       </div>
