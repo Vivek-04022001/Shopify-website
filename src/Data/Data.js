@@ -27,7 +27,7 @@ const Data = [
         imageUrl: Img2,
       },
       {
-        title: "After Sales Calculattion Tools",
+        title: "After Sales Calculation Tool",
         description:
           "Effortlessly track your revenue, expenses, and profits for financial success in your dropshipping and e-commerce business.",
         imageUrl: Img1,

@@ -18,6 +18,7 @@ import Bonus from "./components/UI/Bonus";
 
 import ShiftingCountdown from "./components/UI/ShiftingCountdown";
 import Offers from "./components/UI/Offers";
+import Pricing from "./components/UI/Pricing";
 
 function App() {
  
@@ -29,6 +30,7 @@ function App() {
       <ShiftingCountdown/>
       <Offers/>
       <Bonus/>
+      <Pricing/>
       {/* <Opportunity/> */}
      
       {/* <Services />
