@@ -1,5 +1,4 @@
-import React from "react";
-import "../styles/Pricing.css";
+
 import Data from "../../Data/Data";
 
 const Pricing = () => {

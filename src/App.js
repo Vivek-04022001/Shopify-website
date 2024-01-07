@@ -31,6 +31,7 @@ function App() {
       <Offers/>
       <Bonus/>
       <Pricing/>
+      <Testimonials/>
       {/* <Opportunity/> */}
      
       {/* <Services />
