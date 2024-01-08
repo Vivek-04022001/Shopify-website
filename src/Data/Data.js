@@ -19,9 +19,11 @@ const Data = [
   {
     id: 1,
     Offer: "Mega",
+    price: '₹295',
+    subHeading:'Elevate Your Venture with Shopify Mega Bundle',
     products: [
       {
-        title: "Winning Product Tool",
+       title: "Find Winning Product Tool",
         description:
           "Gain exclusive access to our tool for discovering the most profitable products. Make informed decisions and maximize sales with our expert strategies.",
         imageUrl: Img2,
@@ -69,15 +71,17 @@ const Data = [
   {
     id: 2,
     Offer: "Pro",
+    price: '₹394',
+    subHeading:'Supercharge Your Digital Marketing Skills!',
     products: [
       {
-        title: "Winning Product Tool",
+       title: "Find Winning Product Tool",
         description:
           "Gain exclusive access to our tool for discovering the most profitable products. Make informed decisions and maximize sales with our expert strategies.",
         imageUrl: Img2,
       },
       {
-        title: "After Sales Calculattion Tools",
+        title: "After Sales Calculation Tool",
         description:
           "Effortlessly track your revenue, expenses, and profits for financial success in your dropshipping and e-commerce business.",
         imageUrl: Img1,
@@ -149,15 +153,18 @@ const Data = [
   {
     id: 3,
     Offer: "Arsenal",
+    price: '₹592',
+    subHeading:'Dominate the Digital Landscape with Ultimate Digital Arsenal!',
+
     products: [
       {
-        title: "Winning Product Tool",
+       title: "Find Winning Product Tool",
         description:
           "Gain exclusive access to our tool for discovering the most profitable products. Make informed decisions and maximize sales with our expert strategies.",
         imageUrl: Img2,
       },
       {
-        title: "After Sales Calculattion Tools",
+        title: "After Sales Calculation Tool",
         description:
           "Effortlessly track your revenue, expenses, and profits for financial success in your dropshipping and e-commerce business.",
         imageUrl: Img1,

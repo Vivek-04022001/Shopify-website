@@ -4,8 +4,8 @@ const Hero = () => {
   const videoOpts = {
     playerVars: {
       autoplay: 1,
-      loop:1,
-      controls:0,
+      loop: 1,
+      controls: 0,
      
     },
   };

@@ -17,12 +17,12 @@ const Pricing = () => {
           <div className="grid w-full grid-cols-1  items-center gap-4 md:grid-cols-3">
             {/* <!-- Pricing Card 1 --> */}
             <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-100  bg-gray-800 p-6 text-center text-white shadow xl:p-8 ">
-              <h3 className="mb-4 text-2xl font-semibold">Mega</h3>
+              <h3 className="mb-4 text-2xl font-semibold">{Mega.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
-                Elevate Your Venture with Shopify Mega Bundle
+                {Mega.subHeading}
               </p>
               <div className="my-8 flex items-baseline justify-center">
-                <span className="mr-2 text-5xl font-extrabold">₹295 </span>
+                <span className="mr-2 text-5xl font-extrabold">{Mega.price}</span>
                 <span className="text-gray-400">/lifetime</span>
               </div>
               {/* <!-- Product List --> */}
@@ -78,12 +78,12 @@ const Pricing = () => {
             <div className="mx-auto flex max-w-lg flex-col rounded-lg border-2 border-primary  bg-primary/20 
             bg-gradient-to-b from-secondary via-primary/40 to-accent
             p-6 text-center text-white shadow xl:p-8 ">
-              <h3 className="mb-4 text-2xl font-semibold">Mega</h3>
+              <h3 className="mb-4 text-2xl font-semibold">{Pro.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
-                Elevate Your Venture with Shopify Mega Bundle
+               {Pro.subHeading}
               </p>
               <div className="my-8 flex items-baseline justify-center">
-                <span className="mr-2 text-5xl font-extrabold">₹295 </span>
+                <span className="mr-2 text-5xl font-extrabold">{Pro.price}</span>
                 <span className="text-gray-400">/lifetime</span>
               </div>
               {/* <!-- Product List --> */}
@@ -136,12 +136,12 @@ const Pricing = () => {
             </div>
             {/* Pricing Card 3 */}
             <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-100  bg-gray-800 p-6 text-center text-white shadow xl:p-8 ">
-              <h3 className="mb-4 text-2xl font-semibold">Mega</h3>
+              <h3 className="mb-4 text-2xl font-semibold">{Arsenal.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
-                Elevate Your Venture with Shopify Mega Bundle
+                {Arsenal.subHeading}
               </p>
               <div className="my-8 flex items-baseline justify-center">
-                <span className="mr-2 text-5xl font-extrabold">₹295 </span>
+                <span className="mr-2 text-5xl font-extrabold">{Arsenal.price} </span>
                 <span className="text-gray-400">/lifetime</span>
               </div>
               {/* <!-- Product List --> */}
