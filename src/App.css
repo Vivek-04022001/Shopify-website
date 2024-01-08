@@ -56,7 +56,7 @@
 }
 
 body {
-  @apply bg-backgroundColor;
+  @apply bg-backgroundColor pb-10;
 }
 
 
