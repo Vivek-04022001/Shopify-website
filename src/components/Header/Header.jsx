@@ -108,7 +108,7 @@ const Header = () => {
           <a href="#pricing" onClick={toggleMenu}>
             Pricing
           </a>
-          <a href="#testimonials" onClick={toggleMenu}>
+          <a href="#testimonial" onClick={toggleMenu}>
             Testimonials
           </a>
          
