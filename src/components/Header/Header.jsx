@@ -75,9 +75,7 @@ const Header = () => {
               <li className="hover:text-primary duration-300 transition-all">
                 <a href="#testimonial">Testimonials</a>
               </li>
-              <li className="hover:text-primary duration-300 transition-all">
-                <a href="#faq">f.a.q</a>
-              </li>
+            
             </ul>
           </div>
 
@@ -113,9 +111,7 @@ const Header = () => {
           <a href="#testimonials" onClick={toggleMenu}>
             Testimonials
           </a>
-          <a href="#faq" onClick={toggleMenu}>
-            F.A.Q
-          </a>
+         
         </div>
       </div>
     </header>

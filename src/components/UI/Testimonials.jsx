@@ -52,7 +52,7 @@ const imgs = [
 ];
 
 const ONE_SECOND = 1000;
-const AUTO_DELAY = ONE_SECOND * 1.25;
+const AUTO_DELAY = ONE_SECOND * 3;
 const DRAG_BUFFER = 50;
 
 const SPRING_OPTIONS = {
@@ -95,29 +95,34 @@ const SwipeCarousel = () => {
   };
 
   return (
-    <div className="Container relative overflow-hidden bg-neutral-950 py-8">
+    <div className="Container relative overflow-hidden  py-8" id="testimonial">
+      <div class="absolute left-0 top-0 z-10  h-full w-1/4 bg-gradient-to-l from-transparent from-10% to-black to-100%"></div>
+      <div class="absolute right-0 top-0 z-10 h-full w-1/4 bg-gradient-to-l from-black from-10% to-transparent to-100% "></div>
       <motion.div
         drag="x"
         dragConstraints={{
           left: 0,
           right: 0,
         }}
+        // style={{
+        //   x: imgIndex * -100 + "%",
+        // }}
         style={{
-          x: imgIndex * -100 + "%",
+          x: dragX,
         }}
         animate={{
           translateX: `-${imgIndex * 100}%`,
         }}
         transition={SPRING_OPTIONS}
         onDragEnd={onDragEnd}
-        className="mx-auto flex w-[50%] cursor-grab items-center border active:cursor-grabbing "
+        className="mx-auto flex w-[70%]  cursor-grab items-center  active:cursor-grabbing "
       >
         <Images imgIndex={imgIndex} imgs={imgs} />
       </motion.div>
 
       {/* Add your Dots and GradientEdges components here */}
       <Dots imgIndex={imgIndex} setImgIndex={setImgIndex} />
-      <GradientEdges />
+      {/* <GradientEdges /> */}
     </div>
   );
 };
@@ -138,17 +143,34 @@ const Images = ({ imgIndex, imgs }) => {
             scale: imgIndex === idx ? 0.95 : 0.85,
           }}
           transition={SPRING_OPTIONS}
-          className=" w-full shrink-0 rounded-xl bg-neutral-800 object-cover"
+          className=" w-full shrink-0  rounded-lg   object-cover border border-gray-500 px-8 py-3 bg-gradient-to-br from-secondary from-20% to-90% to-black"
         >
-          <img
-            src={imageUrl}
-            alt={name}
-            className="h-[100px] w-[100px] rounded-full object-cover "
-          />
-          <div>
-            <h1>{description}</h1>
-            <h1 className="mt-10">{name}</h1>
-          </div>
+          <svg
+            className="mx-auto mb-3 h-6 text-gray-400 dark:text-gray-600"
+            viewBox="0 0 24 27"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z"
+              fill="currentColor"
+            />
+          </svg>
+          <blockquote>
+            <p className="text-lg  text-white">{description}</p>
+          </blockquote>
+          <figcaption className="mt-6 flex items-center justify-center space-x-3">
+            <img
+              className="h-6 w-6 rounded-full"
+              src={imageUrl}
+              alt={imageUrl}
+            />
+            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+              <div class="pr-3 font-medium text-gray-900 dark:text-white">
+                {name}
+              </div>
+            </div>
+          </figcaption>
         </motion.div>
       ))}
     </>
