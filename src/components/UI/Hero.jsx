@@ -4,13 +4,20 @@ const Hero = () => {
   const videoOpts = {
     playerVars: {
       autoplay: 1,
-      modestbranding: 1,
+      loop:1,
+      controls:0,
+     
     },
   };
   const videoUrl =
     "https://www.youtube.com/embed/fAi4N8i69kM?si=ccevi-Sg86XPxLZQ";
 
   const videoId = videoUrl.split("/").pop().split("?")[0];
+
+  const onEnd = (event) => {
+    // Event triggered when the video ends
+    event.target.seekTo(0); // Seek back to the start of the video
+  };
 
   return (
     <section className="'hero__section" id="home">
@@ -42,6 +49,7 @@ const Hero = () => {
               videoId={videoId} // Extract the video ID from the URL
               opts={videoOpts}
               className="responsive-video"
+              onEnd={onEnd}
             />
           </div>
         </div>

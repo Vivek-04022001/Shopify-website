@@ -52,13 +52,14 @@ const imgs = [
 ];
 
 const ONE_SECOND = 1000;
-const AUTO_DELAY = ONE_SECOND * 3;
+const AUTO_DELAY = ONE_SECOND * 6
+;
 const DRAG_BUFFER = 50;
 
 const SPRING_OPTIONS = {
   type: "spring",
-  mass: 3,
-  stiffness: 400,
+  mass: 7,
+  stiffness: 500,
   damping: 50,
 };
 
@@ -130,8 +131,8 @@ const SwipeCarousel = () => {
 const Images = ({ imgIndex, imgs }) => {
   const SPRING_OPTIONS = {
     type: "spring",
-    stiffness: 300,
-    damping: 30,
+    stiffness: 600,
+    damping: 10,
   };
 
   return (
@@ -143,10 +144,10 @@ const Images = ({ imgIndex, imgs }) => {
             scale: imgIndex === idx ? 0.95 : 0.85,
           }}
           transition={SPRING_OPTIONS}
-          className=" w-full shrink-0  rounded-lg   object-cover border border-gray-500 px-8 py-3 bg-gradient-to-br from-secondary from-20% to-90% to-black"
+          className=" w-full shrink-0  rounded-lg   object-cover border-2 border-primary/60 border-dashed px-8 py-3 bg-gradient-to-br from-secondary from-20% to-90% to-black"
         >
           <svg
-            className="mx-auto mb-3 h-6 text-gray-400 dark:text-gray-600"
+            className="mx-auto mb-3 h-12 text-gray-400 dark:text-gray-600"
             viewBox="0 0 24 27"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +162,7 @@ const Images = ({ imgIndex, imgs }) => {
           </blockquote>
           <figcaption className="mt-6 flex items-center justify-center space-x-3">
             <img
-              className="h-6 w-6 rounded-full"
+              className="h-8 w-8 rounded-full"
               src={imageUrl}
               alt={imageUrl}
             />
