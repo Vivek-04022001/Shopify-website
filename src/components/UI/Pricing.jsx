@@ -1,4 +1,3 @@
-
 import Data from "../../Data/Data";
 
 const Pricing = () => {
@@ -14,15 +13,17 @@ const Pricing = () => {
           </h2>
           <h2 className="highlight mt-8 text-xl font-bold">Our Offers</h2>
 
-          <div className="grid w-full grid-cols-1  items-center gap-4 md:grid-cols-3">
+          <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-x-4  md:items-center ">
             {/* <!-- Pricing Card 1 --> */}
-            <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-100  bg-gray-800 p-6 text-center text-white shadow xl:p-8 ">
+            <div className="pricing-card-container ">
               <h3 className="mb-4 text-2xl font-semibold">{Mega.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
                 {Mega.subHeading}
               </p>
               <div className="my-8 flex items-baseline justify-center">
-                <span className="mr-2 text-5xl font-extrabold">{Mega.price}</span>
+                <span className="mr-2 text-5xl font-extrabold">
+                  {Mega.price}
+                </span>
                 <span className="text-gray-400">/lifetime</span>
               </div>
               {/* <!-- Product List --> */}
@@ -75,15 +76,15 @@ const Pricing = () => {
             </div>
 
             {/* Pricing Card 2 */}
-            <div className="mx-auto flex max-w-lg flex-col rounded-lg border-2 border-primary  bg-primary/20 
-            bg-gradient-to-b from-secondary via-primary/40 to-accent
-            p-6 text-center text-white shadow xl:p-8 ">
+            <div className="pricing-card-container-best ">
               <h3 className="mb-4 text-2xl font-semibold">{Pro.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
-               {Pro.subHeading}
+                {Pro.subHeading}
               </p>
               <div className="my-8 flex items-baseline justify-center">
-                <span className="mr-2 text-5xl font-extrabold">{Pro.price}</span>
+                <span className="mr-2 text-5xl font-extrabold">
+                  {Pro.price}
+                </span>
                 <span className="text-gray-400">/lifetime</span>
               </div>
               {/* <!-- Product List --> */}
@@ -134,14 +135,17 @@ const Pricing = () => {
                 Get started
               </a>
             </div>
+            
             {/* Pricing Card 3 */}
-            <div className="mx-auto flex max-w-lg flex-col rounded-lg border border-gray-100  bg-gray-800 p-6 text-center text-white shadow xl:p-8 ">
+            <div className="pricing-card-container">
               <h3 className="mb-4 text-2xl font-semibold">{Arsenal.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
                 {Arsenal.subHeading}
               </p>
               <div className="my-8 flex items-baseline justify-center">
-                <span className="mr-2 text-5xl font-extrabold">{Arsenal.price} </span>
+                <span className="mr-2 text-5xl font-extrabold">
+                  {Arsenal.price}{" "}
+                </span>
                 <span className="text-gray-400">/lifetime</span>
               </div>
               {/* <!-- Product List --> */}

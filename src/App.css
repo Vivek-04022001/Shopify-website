@@ -105,3 +105,13 @@ body {
 .text-clip{
   @apply bg-clip-text text-transparent
 }
+
+.pricing-card-container{
+  @apply mx-auto flex w-full md:max-w-lg flex-col rounded-lg border border-gray-100  bg-gray-800 p-6 text-center text-white shadow xl:p-8 ;
+}
+
+.pricing-card-container-best{
+  @apply mx-auto flex w-full md:max-w-lg flex-col rounded-lg border border-primary  bg-primary/20 
+  bg-gradient-to-b from-secondary via-primary/40 to-accent
+  p-4 text-center text-white shadow xl:p-8
+}
