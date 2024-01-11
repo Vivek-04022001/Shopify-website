@@ -1,5 +1,5 @@
 import "../styles/hero.css";
-import YouTube from "react-youtube";
+
 const Hero = () => {
   // const videoOpts = {
   //   playerVars: {
