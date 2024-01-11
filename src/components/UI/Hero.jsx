@@ -1,15 +1,13 @@
 import "../styles/hero.css";
 import YouTube from "react-youtube";
 const Hero = () => {
-  const videoOpts = {
-    playerVars: {
-      autoplay: 1,
-      loop: 1,
-      controls: 0,
-     
-      
-    },
-  };
+  // const videoOpts = {
+  //   playerVars: {
+  //     autoplay: 1,
+  //     loop: 1,
+  //     controls: 0,
+  //   },
+  // };
   const videoUrl =
     "https://www.youtube.com/embed/fAi4N8i69kM?si=ccevi-Sg86XPxLZQ";
 
@@ -41,11 +39,13 @@ const Hero = () => {
               // allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               // allowfullscreen
             ></iframe> */}
-            <YouTube
-              videoId={videoId} // Extract the video ID from the URL
-              opts={videoOpts}
+            <iframe
+              src={videoUrl}
+              title="YouTube Video"
               className="responsive-video"
-            />
+              allow="autoplay; encrypted-media"
+              allowFullScreen
+            ></iframe>
           </div>
         </div>
       </div>
