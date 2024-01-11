@@ -44,6 +44,7 @@ const Hero = () => {
               title="YouTube Video"
               className="responsive-video"
               allow="autoplay; encrypted-media"
+              loading="lazy" // Optimize for lazy loading
               allowFullScreen
             ></iframe>
           </div>
