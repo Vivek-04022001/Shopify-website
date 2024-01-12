@@ -13,8 +13,7 @@ export const CardProvider = ({ children }) => {
   const [selectedBonusTab, setSelectedBonusTab] = useState("Pro");
 
   const tabValue = ["Mega", "Pro", "Arsenal"];
-  console.log('Card context component hits. and productTab ', selectedProductTab)
-  console.log('Card context component hits. and bonusTab ', selectedBonusTab)
+
 
   const contextValue = {
     selectedProductTab,
