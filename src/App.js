@@ -41,19 +41,26 @@ const ShiftingCountdown = lazy(() => import("./components/UI/ShiftingCountdown")
 const Offers = lazy(() => import("./components/UI/Offers"));
 const Pricing = lazy(() => import("./components/UI/Pricing"));
 
+const componentsToLoad = [
+  Header,
+  Hero,
+  ShiftingCountdown,
+  Offers,
+  Bonus,
+  Pricing,
+  Testimonials,
+];
+
 function App() {
+  const SuspenseFallback = <div>Loading...</div>;
+
   return (
-    <Suspense fallback={<div>Loading...</div>}>
-      <Header />
-      <Hero />
-      <ShiftingCountdown />
-      <Offers />
-      <Bonus />
-      <Pricing />
-      <Testimonials />
+    <Suspense fallback={SuspenseFallback}>
+      {componentsToLoad.map((Component, index) => (
+        <Component key={index} />
+      ))}
     </Suspense>
   );
 }
 
 export default App;
-
