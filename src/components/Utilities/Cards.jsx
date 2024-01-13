@@ -52,7 +52,7 @@ const Card = ({ data, animationProps }) => {
       {...animationProps}
     >
       <LazyImg imageUrl={imageUrl} imageUrlsmall={imageUrlsmall} />
-      {/* <img src={imageUrl} alt="" className="w-full" /> */}
+      
       <div className=" flex flex-1 flex-col justify-between text-white">
         <div className="mb-4  text-4xl font-bold text-white">{title}</div>
         <p className=" w-[85%] text-slate-200">{description}</p>
