@@ -32,8 +32,6 @@
     rgba(35, 93, 173, 1) 75%
   );
 
- 
-
   --newsletter-bg: linear-gradient(
     to right top,
     #1149e7,
@@ -59,59 +57,102 @@ body {
   @apply bg-backgroundColor pb-10;
 }
 
-
-
 .Container {
-  @apply container max-w-6xl mx-auto px-6 mb-16 py-4;
+  @apply container mx-auto mb-16 max-w-6xl px-6 py-4;
 }
 
-.heading{
-  @apply text-white
+.heading {
+  @apply text-white;
 }
 
 .heading-md {
-  @apply text-5xl font-extrabold max-w-3xl mx-auto text-center;
+  @apply mx-auto max-w-3xl text-center text-5xl font-extrabold;
 }
 
-.heading-lg{
-  @apply text-6xl font-bold
+.heading-lg {
+  @apply text-6xl font-bold;
 }
 
 /* text-gradient */
-.counter-gradient{
-  @apply bg-clip-text text-transparent bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 !important;
+.counter-gradient {
+  @apply bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 bg-clip-text text-transparent !important;
 }
-
-
 
 /* only gradient */
-.newsletter-gradient{
-  @apply bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400
+.newsletter-gradient {
+  @apply bg-gradient-to-br from-blue-600 via-blue-500 to-blue-400;
 }
 
-.normal-gradient{
-  @apply bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 
+.normal-gradient {
+  @apply bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700;
 }
 
-.card-gradient{
-  @apply bg-gradient-to-r from-indigo-800 via-blue-700 to-blue-500
+.card-gradient {
+  @apply bg-gradient-to-r from-indigo-800 via-blue-700 to-blue-500;
 }
-
 
 .highlight {
-  @apply text-primary
+  @apply text-primary;
 }
 
-.text-clip{
-  @apply bg-clip-text text-transparent
+.text-clip {
+  @apply bg-clip-text text-transparent;
 }
 
-.pricing-card-container{
-  @apply mx-auto flex w-full md:max-w-lg flex-col rounded-lg border border-gray-100  bg-gray-800 p-6 text-center text-white shadow xl:p-8 ;
+.pricing-card-container {
+  @apply mx-auto flex w-full flex-col rounded-lg border border-gray-100 bg-gray-800  p-6 text-center text-white shadow md:max-w-lg xl:p-8;
 }
 
-.pricing-card-container-best{
-  @apply mx-auto flex w-full md:max-w-lg flex-col rounded-lg border border-primary  bg-primary/20 
-  bg-gradient-to-b from-secondary via-primary/40 to-accent
-  p-4 text-center text-white shadow xl:p-8
+.pricing-card-container-best {
+  @apply mx-auto flex w-full flex-col rounded-lg border border-primary bg-primary/20  bg-gradient-to-b 
+  from-secondary via-primary/40 to-accent p-4
+  text-center text-white shadow md:max-w-lg xl:p-8;
+}
+
+/* lazy images */
+
+.blur-load {
+  background-size: cover;
+  background-position: center;
+  position:relative;
+}
+.blur-load::before{
+  content:'';
+  position:absolute;
+  inset:0;
+  background-color: rgba(255,255,255,0.1);
+  animation: pulse 2.5s infinite;
+  
+
+}
+
+@keyframes pulse{
+  0%{
+    background-color:rgba(255,255,255,0)
+  }
+  50%{
+    background-color:rgba(255,255,255,0.2)
+  }
+  0%{
+    background-color:rgba(255,255,255,0)
+  }
+}
+.blur-load.loaded > img {
+  opacity: 1;
+}
+.blur-load.loaded::before{
+  content:none;
+  animation:none;
+}
+
+.blur-load > img {
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  object-position: center;
+  object-fit: cover;
 }
