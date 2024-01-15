@@ -34,8 +34,8 @@ const Bonus = () => {
   return (
     <section id="bonus">
       <div className="Container">
-        <div className="flex flex-col items-center  gap-5 md:gap-10 mt-20">
-          <h2 className="heading heading-md">
+        <div className="flex flex-col items-center  gap-5 md:gap-10 mt-20 ">
+          <h2 className="heading heading-md ">
             Unlock <span className="highlight">Bonuses</span> Worth
             <span className="bg-gradient-to-r from-teal-400 via-blue-600 to-indigo-700 text-white rounded-md px-2 mx-4  border-white">{worth}</span> If You
             Enroll Today

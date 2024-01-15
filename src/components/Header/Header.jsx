@@ -55,7 +55,7 @@ const Header = () => {
       <div className="Container  ">
         <div className="flex items-center justify-between ">
           <div className="w-[150px] ">
-            <img src={Logo} alt="logo" className="w-full" />
+            <img src={Logo} alt="logo" className="w-full" loading="lazy"/>
           </div>
           {/* --navigation-- */}
           <div ref={menuRef}  className="navigation">

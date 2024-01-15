@@ -104,9 +104,7 @@ const SwipeCarousel = () => {
           left: 0,
           right: 0,
         }}
-        // style={{
-        //   x: imgIndex * -100 + "%",
-        // }}
+      
         style={{
           x: dragX,
         }}
@@ -164,6 +162,7 @@ const Images = ({ imgIndex, imgs }) => {
               className="h-6 w-6 rounded-full "
               src={imageUrl}
               alt={imageUrl}
+              loading="lazy"
             />
             <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
               <div class="pr-3 font-medium text-gray-900 dark:text-white">
@@ -195,13 +194,6 @@ const Dots = ({ imgIndex, setImgIndex }) => {
   );
 };
 
-const GradientEdges = () => {
-  return (
-    <>
-      <div className="pointer-events-none absolute bottom-0 left-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-r from-neutral-950/50 to-neutral-950/0" />
-      <div className="pointer-events-none absolute bottom-0 right-0 top-0 w-[10vw] max-w-[100px] bg-gradient-to-l from-neutral-950/50 to-neutral-950/0" />
-    </>
-  );
-};
+
 
 export default SwipeCarousel;

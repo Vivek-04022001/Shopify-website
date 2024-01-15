@@ -51,10 +51,11 @@
   margin: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
+  /* outline: 1px solid yellow; */
 }
 
 body {
-  @apply bg-backgroundColor pb-10;
+  @apply bg-backgroundColor overflow-x-hidden ;
 }
 
 .Container {
@@ -66,7 +67,7 @@ body {
 }
 
 .heading-md {
-  @apply mx-auto max-w-3xl text-center text-5xl font-extrabold;
+  @apply mx-auto max-w-3xl text-center text-4xl md:text-5xl font-extrabold;
 }
 
 .heading-lg {
@@ -154,3 +155,51 @@ img {
   object-position: center;
   object-fit: cover;
 }
+
+/* other page layout */
+.Container-other {
+  @apply max-w-3xl mx-auto pt-20 min-h-screen font-mono space-y-8 pb-10;
+}
+
+.other-heading{
+  @apply text-6xl text-center
+}
+
+.Container-other > div{
+  line-height: 2.7;
+  font-size: 1.1rem;
+}
+
+.Container-other h2{
+  @apply font-bold underline highlight mt-6
+}
+.Container-other h4{
+  @apply ml-4 underline font-bold 
+}
+.Container-other ul{
+  @apply list-decimal
+}
+
+.Container-other strong{
+  @apply font-extrabold underline
+}
+
+/* scrollbar */
+/* width */
+/* ::-webkit-scrollbar {
+  width: 10px;
+	background-color: blue;
+} */
+
+/* Track */
+/* ::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	@apply bg-backgroundColor
+} */
+ 
+/* Handle */
+/* ::-webkit-scrollbar-thumb {
+@apply bg-primary rounded-md 
+
+} */
+
