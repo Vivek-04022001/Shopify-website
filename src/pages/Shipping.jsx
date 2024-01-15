@@ -10,10 +10,8 @@ const Shipping = () => {
         </Link>
       </div>
       <div className="Container-other ">
-        <h1 className="other-heading">Contact Us</h1>
+        <h1 className="other-heading">Shipping & Delivery Policy</h1>
         <div className="border-t px-6">
-          
-
           <p>
             Welcome to PixelVista! Our commitment to providing a seamless
             experience extends to the immediate delivery of our digital products

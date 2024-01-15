@@ -55,7 +55,7 @@
 }
 
 body {
-  @apply bg-backgroundColor overflow-x-hidden ;
+  @apply overflow-x-hidden bg-backgroundColor;
 }
 
 .Container {
@@ -67,7 +67,7 @@ body {
 }
 
 .heading-md {
-  @apply mx-auto max-w-3xl text-center text-4xl md:text-5xl font-extrabold;
+  @apply mx-auto max-w-3xl text-center text-4xl font-extrabold md:text-5xl;
 }
 
 .heading-lg {
@@ -158,48 +158,49 @@ img {
 
 /* other page layout */
 .Container-other {
-  @apply max-w-3xl mx-auto pt-20 min-h-screen font-mono space-y-8 pb-10;
+  @apply mx-auto min-h-screen max-w-3xl space-y-8 pb-10 pt-20 font-mono;
 }
 
-.other-heading{
-  @apply text-6xl text-center
+.other-heading {
+  @apply text-center text-6xl;
 }
 
-.Container-other > div{
+.Container-other > div {
   line-height: 2.7;
   font-size: 1.1rem;
 }
 
-.Container-other h2{
-  @apply font-bold underline highlight mt-6
+.Container-other h2 {
+  @apply highlight mt-6 font-bold underline;
 }
-.Container-other h4{
-  @apply ml-4 underline font-bold 
+.Container-other h4 {
+  @apply ml-4 font-bold underline;
 }
-.Container-other ul{
-  @apply list-decimal
+.Container-other ul {
+  @apply list-decimal;
 }
 
-.Container-other strong{
-  @apply font-extrabold underline
+.Container-other  p{
+  @apply mt-4
+}
+.Container-other strong {
+  @apply font-extrabold underline;
 }
 
 /* scrollbar */
 /* width */
-/* ::-webkit-scrollbar {
+::-webkit-scrollbar {
   width: 10px;
-	background-color: blue;
-} */
+  background-color: blue;
+}
 
 /* Track */
-/* ::-webkit-scrollbar-track {
-	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-	@apply bg-backgroundColor
-} */
- 
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  @apply bg-backgroundColor;
+}
+
 /* Handle */
-/* ::-webkit-scrollbar-thumb {
-@apply bg-primary rounded-md 
-
-} */
-
+::-webkit-scrollbar-thumb {
+  @apply rounded-md bg-primary;
+}
