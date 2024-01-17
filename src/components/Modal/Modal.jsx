@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { GiConfirmed } from "react-icons/gi";
+import { FaArrowRightLong } from "react-icons/fa6";
 
 const Modal = ({ isOpen, onClose, productInfo }) => {
   useEffect(() => {
@@ -31,25 +32,27 @@ const Modal = ({ isOpen, onClose, productInfo }) => {
             onClick={(e) => e.stopPropagation()}
             className="  relative max-h-[60dvh] w-full max-w-lg
           cursor-default
-          overflow-hidden rounded-lg bg-gradient-to-tr from-teal-400 via-blue-600 to-indigo-700 p-6 text-white shadow-xl"
+          overflow-hidden rounded-lg bg-gradient-to-tr from-teal-400 via-blue-600 to-indigo-700 p-6 text-white shadow-xl "
           >
             <GiConfirmed className="absolute -left-10 -top-14 z-0 rotate-12 text-[200px] text-white/20" />
             <div className="relative z-10">
-              <h2 className="text-center text-2xl font-bold md:text-4xl">
+              <h2 className="text-center text-2xl font-bold md:text-4xl capitalize">
                 Confirm the product
               </h2>
-              <h3 className="mb-2 text-center text-lg  font-bold md:text-2xl ">
-                One more time ⏱️
-              </h3>
+             
 
               <article className="max-h-[25dvh] overflow-auto px-1">
-                <h3 className="my-2 text-center text-lg font-bold md:my-6 md:text-2xl">
-                  Offer Selected{" "}
-                  <span className=" rounded-full bg-white px-2 py-1 text-primary">
-                    {" "}
-                    {productInfo.Offer}
-                  </span>
+                <h3 className="capitalize text-md text-center font-thin tracking-widest md:mb-1  md:text-lg">
+                  Offer Selected
                 </h3>
+                <h2 className="mb-1  rounded-md text-center text-lg font-bold tracking-widest md:mb-3 md:text-2xl flex items-center justify-center">
+                  <span>{productInfo.Offer}</span>
+                  <FaArrowRightLong  className="ml-2 text-lg"/>
+                  <span className="ml-4 rounded-md bg-white px-2 text-secondary ">
+
+                    {productInfo.price}
+                  </span>
+                </h2>
                 {/*  information */}
                 <div className="mx-4">
                   {/* product info */}
