@@ -1,7 +1,20 @@
+import { useState } from "react";
 import Data from "../../Data/Data";
+import Modal from "../Modal/Modal";
 
 const Pricing = () => {
   const [Mega, Pro, Arsenal] = Data;
+  const [productInfo, setProductInfo] = useState('');
+  const [isOpen, setIsOpen] = useState(false);
+
+  const onClose = () =>{
+    setIsOpen(false)
+  }
+
+  const handleClick = (info)=>{
+    setIsOpen(true);
+    setProductInfo(info)
+  }
 
   return (
     <section id="pricing">
@@ -67,12 +80,12 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <a
-                href="#"
+              <button
+                onClick={()=> handleClick(Mega)} 
                 className="w-full rounded-lg bg-gradient-to-r from-indigo-800 via-blue-700  to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white "
               >
                 Get started
-              </a>
+              </button>
             </div>
 
             {/* Pricing Card 2 */}
@@ -128,12 +141,12 @@ const Pricing = () => {
                 ))}
               </ul>
 
-              <a
-                href="#"
+              <button
+                onClick={()=> handleClick(Pro)} 
                 className="w-full rounded-lg bg-gradient-to-r from-indigo-800 via-blue-700  to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white "
               >
                 Get started
-              </a>
+              </button>
             </div>
             
             {/* Pricing Card 3 */}
@@ -188,17 +201,18 @@ const Pricing = () => {
                   </li>
                 ))}
               </ul>
-
-              <a
-                href="#"
+              <button
+                onClick={()=> handleClick(Arsenal)} 
                 className="w-full rounded-lg bg-gradient-to-r from-indigo-800 via-blue-700  to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white "
               >
                 Get started
-              </a>
+              </button>
             </div>
           </div>
         </div>
       </div>
+      {/*  */}
+      <Modal isOpen={isOpen} onClose={onClose} productInfo={productInfo}/>
     </section>
   );
 };

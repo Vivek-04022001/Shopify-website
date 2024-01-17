@@ -3,7 +3,7 @@ import { useState, useContext, useEffect } from "react";
 import { CardContext } from "../../context/CardContext";
 
 const ChipTabsBonus = () => {
-  const { tabValue, setSelectedBonusTab, selectedBonusTab } =
+  const {  setSelectedBonusTab, selectedBonusTab } =
     useContext(CardContext);
 
   const [selected, setSelected] = useState(selectedBonusTab);
