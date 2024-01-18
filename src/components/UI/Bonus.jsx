@@ -1,7 +1,7 @@
 import ChipTabsBonus from '../Utilities/ChipTabsBonus.jsx'
 import Cards from "../Utilities/Cards.jsx";
 import { useContext, useState, useEffect } from "react";
-import { CardContext } from "../../context/CardContext.js";
+import { CardContext } from "../../context/CardContext.jsx";
 
 const priceTag = [
   {

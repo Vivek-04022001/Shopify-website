@@ -1,4 +1,4 @@
-import React, { createContext, useState } from "react";
+import { createContext, useState } from "react";
 
 export const CardContext = createContext({
   selectedBonusTab: null,
@@ -27,3 +27,4 @@ export const CardProvider = ({ children }) => {
     <CardContext.Provider value={contextValue}>{children}</CardContext.Provider>
   );
 };
+

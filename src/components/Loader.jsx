@@ -1,4 +1,4 @@
-import { InfinitySpin, RotatingLines, ThreeDots } from 'react-loader-spinner'
+import { InfinitySpin } from 'react-loader-spinner'
 import React from 'react'
 
 const Loader = () => {
