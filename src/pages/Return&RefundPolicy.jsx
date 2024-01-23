@@ -2,6 +2,9 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 const ReturnRefundPolicy = () => {
+  useEffect(()=>{
+    window.scrollTo(0, 0);
+  },[])
   return (
     <div className="relative">
       <div className="absolute left-5 top-5 md:left-10 md:top-10 ">

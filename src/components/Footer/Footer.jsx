@@ -13,7 +13,7 @@ const Footer = () => {
       <div className="md:text-md mx-auto grid max-w-4xl grid-cols-1  gap-12  px-6  py-10 text-center  text-slate-400  md:grid-cols-2 md:py-10">
         <aside className="flex flex-col items-center gap-3 ">
           <div className="w-[150px] ">
-            <img src={logo} alt="logo" className="w-full" loading="lazy"/>
+            <img src={logo} alt="logo" className="w-full" loading="lazy" />
           </div>
           <p className="w-[100%] md:w-[80%] ">
             PixelVista
@@ -28,15 +28,30 @@ const Footer = () => {
           <nav className="hidden flex-col gap-y-1 text-left md:flex">
             <header className="footer-title">Pages</header>
 
-            <a className="link-hover link" href="#home">Home</a>
+            <a className="link-hover link" href="#home">
+              Home
+            </a>
 
-            <a className="link-hover link" href="#offer">Offers</a>
+            <a className="link-hover link" href="#offer">
+              Offers
+            </a>
 
-            <a className="link-hover link" href="#bonus">Bonuses</a>
+            <a className="link-hover link" href="#bonus">
+              Bonuses
+            </a>
 
-            <a className="link-hover link" href="#pricing">Pricing</a>
+            <a className="link-hover link" href="#pricing">
+              Pricing
+            </a>
 
-            <a className="link-hover link" href="#testimonial">Testimonials</a>
+            <a className="link-hover link" href="#testimonial">
+              Testimonials
+            </a>
+            <Link to='/faq'>
+              <button className="link-hover link" href="#">
+                F.A.Q
+              </button>
+            </Link>
           </nav>
           {/* legal */}
           <nav className="flex flex-col gap-y-2 w-full  text-center md:text-left  md:w-fit">

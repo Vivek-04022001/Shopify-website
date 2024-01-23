@@ -75,6 +75,9 @@ const Header = () => {
               <li className="hover:text-primary duration-300 transition-all">
                 <a href="#testimonial">Testimonials</a>
               </li>
+              <li className="hover:text-primary duration-300 transition-all">
+                <a href="#footer">Footer</a>
+              </li>
             
             </ul>
           </div>
@@ -110,6 +113,9 @@ const Header = () => {
           </a>
           <a href="#testimonial" onClick={toggleMenu}>
             Testimonials
+          </a>
+          <a href="#footer" onClick={toggleMenu}>
+            Footer
           </a>
          
         </div>
