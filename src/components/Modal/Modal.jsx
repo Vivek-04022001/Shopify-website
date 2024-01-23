@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { GiConfirmed } from "react-icons/gi";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const Modal = ({ isOpen, onClose, productInfo }) => {
+const Modal = ({ isOpen, onClose, productInfo,paymentLink }) => {
   useEffect(() => {
     if (isOpen) document.body.classList.add("overflow-hidden");
     else document.body.classList.remove("overflow-hidden");
@@ -39,7 +39,6 @@ const Modal = ({ isOpen, onClose, productInfo }) => {
               <h2 className="text-center text-2xl font-bold md:text-4xl capitalize">
                 Confirm the product
               </h2>
-             
 
               <article className="max-h-[25dvh] overflow-auto px-1">
                 <h3 className="capitalize text-md text-center font-thin tracking-widest md:mb-1  md:text-lg">
@@ -47,9 +46,8 @@ const Modal = ({ isOpen, onClose, productInfo }) => {
                 </h3>
                 <h2 className="mb-1  rounded-md text-center text-lg font-bold tracking-widest md:mb-3 md:text-2xl flex items-center justify-center">
                   <span>{productInfo.Offer}</span>
-                  <FaArrowRightLong  className="ml-2 text-lg"/>
+                  <FaArrowRightLong className="ml-2 text-lg" />
                   <span className="ml-4 rounded-md bg-white px-2 text-secondary ">
-
                     {productInfo.price}
                   </span>
                 </h2>
@@ -77,7 +75,7 @@ const Modal = ({ isOpen, onClose, productInfo }) => {
                   onClick={closeModal}
                   className="w-full rounded bg-white py-2 font-semibold text-indigo-600 transition-opacity hover:opacity-90"
                 >
-                  Understood!
+                  <a href={paymentLink} target="_blank">Understood!</a>
                 </button>
               </div>
             </div>

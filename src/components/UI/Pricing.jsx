@@ -4,17 +4,23 @@ import Modal from "../Modal/Modal";
 
 const Pricing = () => {
   const [Mega, Pro, Arsenal] = Data;
-  const [productInfo, setProductInfo] = useState('');
+  const [productInfo, setProductInfo] = useState("");
+  const [paymentLink, setPaymentLink] = useState("");
   const [isOpen, setIsOpen] = useState(false);
 
-  const onClose = () =>{
-    setIsOpen(false)
-  }
+  const onClose = () => {
+    setIsOpen(false);
+  };
 
-  const handleClick = (info)=>{
+  const handleClick = (info) => {
     setIsOpen(true);
-    setProductInfo(info)
-  }
+    setProductInfo(info);
+   
+    setPaymentLink(() => {
+      return `https://pages.razorpay.com/${info.Offer.toLowerCase()}z`;
+    });
+
+  };
 
   return (
     <section id="pricing">
@@ -81,7 +87,7 @@ const Pricing = () => {
               </ul>
 
               <button
-                onClick={()=> handleClick(Mega)} 
+                onClick={() => handleClick(Mega)}
                 className="w-full rounded-lg bg-gradient-to-r from-indigo-800 via-blue-700  to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white "
               >
                 Get started
@@ -142,13 +148,13 @@ const Pricing = () => {
               </ul>
 
               <button
-                onClick={()=> handleClick(Pro)} 
+                onClick={() => handleClick(Pro)}
                 className="w-full rounded-lg bg-gradient-to-r from-indigo-800 via-blue-700  to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white "
               >
                 Get started
               </button>
             </div>
-            
+
             {/* Pricing Card 3 */}
             <div className="pricing-card-container">
               <h3 className="mb-4 text-2xl font-semibold">{Arsenal.Offer}</h3>
@@ -202,7 +208,7 @@ const Pricing = () => {
                 ))}
               </ul>
               <button
-                onClick={()=> handleClick(Arsenal)} 
+                onClick={() => handleClick(Arsenal)}
                 className="w-full rounded-lg bg-gradient-to-r from-indigo-800 via-blue-700  to-blue-500 px-5 py-2.5 text-center text-sm font-medium text-white "
               >
                 Get started
@@ -212,7 +218,7 @@ const Pricing = () => {
         </div>
       </div>
       {/*  */}
-      <Modal isOpen={isOpen} onClose={onClose} productInfo={productInfo}/>
+      <Modal isOpen={isOpen} onClose={onClose} productInfo={productInfo} paymentLink={paymentLink}/>
     </section>
   );
 };

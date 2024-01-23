@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Loader from "./components/Loader";
+import Faq from "./pages/Faq";
 
 const Home = lazy(() => import("./pages/Home"));
 const Contact = lazy(() => import("./pages/Contact"));
@@ -25,6 +26,7 @@ function App() {
           />
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/shipping" element={<Shipping />} />
+          <Route path="/faq" element={<Faq />} />
         </Routes>
       </Suspense>
     </BrowserRouter>
