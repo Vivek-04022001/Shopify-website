@@ -158,7 +158,7 @@ img {
 
 /* other page layout */
 .Container-other {
-  @apply mx-auto min-h-screen max-w-3xl space-y-8 pb-10 pt-20 font-mono;
+  @apply mx-auto min-h-screen max-w-3xl space-y-8 pb-10 pt-20 font-mono px-3 md:px-0;
 }
 
 .other-heading {

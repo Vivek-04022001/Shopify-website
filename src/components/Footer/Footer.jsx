@@ -56,7 +56,11 @@ const Footer = () => {
           {/* legal */}
           <nav className="flex flex-col gap-y-2 w-full  text-center md:text-left  md:w-fit">
             <header className="footer-title ">Legal</header>
-
+            <Link to='/faq' className="md:hidden">
+              <button className="link-hover link" href="#">
+                F.A.Q
+              </button>
+            </Link>
             <Link to="/termsandconditions">
               <a className="link-hover link">Terms & Conditions</a>
             </Link>
