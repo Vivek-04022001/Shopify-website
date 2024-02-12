@@ -26,7 +26,7 @@ const Home = () => {
         <Testimonials />
         <Footer />
       </Suspense>
-      <ScrollToTopButton/>
+      {/* <ScrollToTopButton/> */}
     </div>
   );
 };
