@@ -33,16 +33,17 @@ import InstagramCourseSmall from "../assets/mobile/Instagram-Course.png";
 import ChromaCraftPackSmall from "../assets/mobile/Chroma-Craft-Pack.png";
 import MotionMarvelsSmall from "../assets/mobile/Motion-Marvels.png";
 
+// showcase images
 
 const Data = [
   {
     id: 1,
     Offer: "Mega",
-    price: '₹295',
-    subHeading:'Elevate Your Venture with Shopify Mega Bundle',
+    price: "₹295",
+    subHeading: "Elevate Your Venture with Shopify Mega Bundle",
     products: [
       {
-       title: "Find Winning Product Tool",
+        title: "Find Winning Product Tool",
         description:
           "Gain exclusive access to our tool for discovering the most profitable products. Make informed decisions and maximize sales with our expert strategies.",
         imageUrl: Img2,
@@ -54,7 +55,6 @@ const Data = [
           "Effortlessly track your revenue, expenses, and profits for financial success in your dropshipping and e-commerce business.",
         imageUrl: Img1,
         imageUrlsmall: Img1Small,
-      
       },
     ],
     bonus: [
@@ -63,59 +63,57 @@ const Data = [
         description:
           "Choose from professionally designed themes to give your online store a competitive edge.",
         imageUrl: ShopifyThemes,
-        imageUrlsmall:ShopifyThemesSmall
+        imageUrlsmall: ShopifyThemesSmall,
       },
       {
         title: "Dropshipping Mastery",
         description:
           "Master the art of dropshipping with in-depth training on sourcing products, inventory management, and business optimization.",
         imageUrl: DropshippingCourse,
-        imageUrlsmall:DropshippingCourseSmall
+        imageUrlsmall: DropshippingCourseSmall,
       },
       {
         title: "Facebook Ad Hacks",
         description:
           "Unlock the secrets to successful Facebook ad campaigns with proven strategies for targeted traffic and increased sales.",
         imageUrl: FacebookAdHacks,
-        imageUrlsmall:FacebookAdHacksSmall
+        imageUrlsmall: FacebookAdHacksSmall,
       },
       {
         title: "Email Marketing Hacks",
         description:
           "Drive customer engagement and increase sales with powerful email marketing strategies.",
         imageUrl: EmailMarketingHacks,
-        imageUrlsmall:EmailMarketingHacksSmall
+        imageUrlsmall: EmailMarketingHacksSmall,
       },
       {
         title: "14200+ Canva Templates",
         description:
           "Simplify your design process with our collection of Canva templates.",
         imageUrl: CanvaTemplates,
-        imageUrlsmall:CanvaTemplatesSmall
+        imageUrlsmall: CanvaTemplatesSmall,
       },
     ],
   },
   {
     id: 2,
     Offer: "Pro",
-    price: '₹394',
-    subHeading:'Supercharge Your Digital Marketing Skills!',
+    price: "₹394",
+    subHeading: "Supercharge Your Digital Marketing Skills!",
     products: [
       {
-       title: "Find Winning Product Tool",
+        title: "Find Winning Product Tool",
         description:
           "Gain exclusive access to our tool for discovering the most profitable products. Make informed decisions and maximize sales with our expert strategies.",
-          imageUrl: Img2,
-          imageUrlsmall: Img2Small,
-    
+        imageUrl: Img2,
+        imageUrlsmall: Img2Small,
       },
       {
         title: "After Sales Calculation Tool",
         description:
           "Effortlessly track your revenue, expenses, and profits for financial success in your dropshipping and e-commerce business.",
-          imageUrl: Img1,
-          imageUrlsmall: Img1Small,
-       
+        imageUrl: Img1,
+        imageUrlsmall: Img1Small,
       },
       {
         title: "InstaMotion Marvels",
@@ -129,14 +127,14 @@ const Data = [
         description:
           "Enhance your social media presence across platforms with our motion graphics and pre-designed social media posts.",
         imageUrl: SocialMediaPack,
-        imageUrlsmall:SocialMediaPackSmall,
+        imageUrlsmall: SocialMediaPackSmall,
       },
       {
         title: "AI Image Library",
         description:
           "Access a rich Image library powered by AI, enhancing your design capabilities.",
         imageUrl: AIImageLibrary,
-        imageUrlsmall:AIImageLibrarySmall
+        imageUrlsmall: AIImageLibrarySmall,
       },
     ],
     bonus: [
@@ -145,109 +143,107 @@ const Data = [
         description:
           "Choose from professionally designed themes to give your online store a competitive edge.",
         imageUrl: ShopifyThemes,
-        imageUrlsmall:ShopifyThemesSmall
+        imageUrlsmall: ShopifyThemesSmall,
       },
       {
         title: "Dropshipping Mastery",
         description:
           "Master the art of dropshipping with in-depth training on sourcing products, inventory management, and business optimization.",
         imageUrl: DropshippingCourse,
-        imageUrlsmall:DropshippingCourseSmall
+        imageUrlsmall: DropshippingCourseSmall,
       },
       {
         title: "Facebook Ad Hacks",
         description:
           "Unlock the secrets to successful Facebook ad campaigns with proven strategies for targeted traffic and increased sales.",
         imageUrl: FacebookAdHacks,
-        imageUrlsmall:FacebookAdHacksSmall,
+        imageUrlsmall: FacebookAdHacksSmall,
       },
       {
         title: "Email Marketing Hacks",
         description:
           "Drive customer engagement and increase sales with powerful email marketing strategies.",
         imageUrl: EmailMarketingHacks,
-        imageUrlsmall:EmailMarketingHacksSmall,
+        imageUrlsmall: EmailMarketingHacksSmall,
       },
       {
         title: "14200+ Canva Templates",
         description:
           "Simplify your design process with our collection of Canva templates.",
         imageUrl: CanvaTemplates,
-        imageUrlsmall:CanvaTemplatesSmall
+        imageUrlsmall: CanvaTemplatesSmall,
       },
       {
         title: "YouTube Growth Bundle",
         description:
           "Grow your YouTube channel with our proven growth template.",
         imageUrl: YoutubeGrowthBundle,
-        imageUrlsmall:YoutubeGrowthBundleSmall,
+        imageUrlsmall: YoutubeGrowthBundleSmall,
       },
       {
         title: "Instagram Mastery Course",
         description:
           "Unlock the secrets to Instagram success with our comprehensive mastery course.",
         imageUrl: InstagramCourse,
-        imageUrlsmall:InstagramCourseSmall
+        imageUrlsmall: InstagramCourseSmall,
       },
     ],
   },
   {
     id: 3,
     Offer: "Arsenal",
-    price: '₹592',
-    subHeading:'Dominate the Digital Landscape with Ultimate Digital Arsenal!',
+    price: "₹592",
+    subHeading: "Dominate the Digital Landscape with Ultimate Digital Arsenal!",
 
     products: [
       {
-       title: "Find Winning Product Tool",
+        title: "Find Winning Product Tool",
         description:
           "Gain exclusive access to our tool for discovering the most profitable products. Make informed decisions and maximize sales with our expert strategies.",
-          imageUrl: Img2,
-          imageUrlsmall: Img2Small,
-     
+        imageUrl: Img2,
+        imageUrlsmall: Img2Small,
       },
       {
         title: "After Sales Calculation Tool",
         description:
           "Effortlessly track your revenue, expenses, and profits for financial success in your dropshipping and e-commerce business.",
-          imageUrl: Img1,
-          imageUrlsmall: Img1Small,
-       
+        imageUrl: Img1,
+        imageUrlsmall: Img1Small,
       },
       {
         title: "InstaMotion Marvels",
         description:
           "Amp up your Instagram game with over 8000+ motion graphics to engage your audience.",
         imageUrl: InstaMotionMarvels,
-        imageUrlsmall:InstaMotionMarvelsSmall,
+        imageUrlsmall: InstaMotionMarvelsSmall,
       },
       {
         title: "Social Media Pack",
         description:
           "Enhance your social media presence across platforms with our motion graphics and pre-designed social media posts.",
         imageUrl: SocialMediaPack,
-        imageUrlsmall:InstaMotionMarvelsSmall
+        imageUrlsmall: InstaMotionMarvelsSmall,
       },
       {
         title: "AI Image Library",
         description:
           "Access a rich Image library powered by AI, enhancing your design capabilities.",
         imageUrl: AIImageLibrary,
-        imageUrlsmall:AIImageLibrarySmall
+        imageUrlsmall: AIImageLibrarySmall,
       },
       {
         title: "Shade Fusion Pack",
         description:
           "Enhance your visuals with a 5000+ collection of gradient overlays.",
         imageUrl: ShadeFusionPack,
-        imageUrlsmall:ShadeFusionPackSmall
+        imageUrlsmall: ShadeFusionPackSmall,
       },
       {
         title: "15000+ Lightroom Presets Pack",
         description:
           "Elevate your photography with a vast collection of Lightroom presets.",
         imageUrl: LightroomPresetsPack,
-        imageUrlsmall:LightroomPresetsPackSmall
+        imageUrlsmall: LightroomPresetsPackSmall,
       },
     ],
     bonus: [
@@ -256,65 +252,94 @@ const Data = [
         description:
           "Choose from professionally designed themes to give your online store a competitive edge.",
         imageUrl: ShopifyThemes,
-        imageUrlsmall:ShopifyThemesSmall
+        imageUrlsmall: ShopifyThemesSmall,
       },
       {
         title: "Dropshipping Mastery",
         description:
           "Master the art of dropshipping with in-depth training on sourcing products, inventory management, and business optimization.",
         imageUrl: DropshippingCourse,
-        imageUrlsmall:DropshippingCourseSmall
+        imageUrlsmall: DropshippingCourseSmall,
       },
       {
         title: "Facebook Ad Hacks",
         description:
           "Unlock the secrets to successful Facebook ad campaigns with proven strategies for targeted traffic and increased sales.",
         imageUrl: FacebookAdHacks,
-        imageUrlsmall:FacebookAdHacksSmall
+        imageUrlsmall: FacebookAdHacksSmall,
       },
       {
         title: "Email Marketing Hacks",
         description:
           "Drive customer engagement and increase sales with powerful email marketing strategies.",
         imageUrl: EmailMarketingHacks,
-        imageUrlsmall:EmailMarketingHacksSmall
+        imageUrlsmall: EmailMarketingHacksSmall,
       },
       {
         title: "14200+ Canva Templates",
         description:
           "Simplify your design process with our collection of Canva templates.",
         imageUrl: CanvaTemplates,
-        imageUrlsmall:CanvaTemplatesSmall
+        imageUrlsmall: CanvaTemplatesSmall,
       },
       {
         title: "YouTube Growth Bundle",
         description:
           "Grow your YouTube channel with our proven growth template.",
         imageUrl: YoutubeGrowthBundle,
-        imageUrlsmall:YoutubeGrowthBundleSmall
+        imageUrlsmall: YoutubeGrowthBundleSmall,
       },
       {
         title: "Instagram Mastery Course",
         description:
           "Unlock the secrets to Instagram success with our comprehensive mastery course.",
         imageUrl: InstagramCourse,
-        imageUrlsmall:InstagramCourseSmall
+        imageUrlsmall: InstagramCourseSmall,
       },
       {
         title: "ChromaCraft",
         description:
           "Elevate your videos with 150+ artistic video gradients and backgrounds for a standout visual appeal.",
         imageUrl: ChromaCraftPack,
-        imageUrlsmall:ChromaCraftPackSmall
+        imageUrlsmall: ChromaCraftPackSmall,
       },
       {
         title: "Motion Marvels",
         description:
           "Bring life to your videos with 2000+ dynamic elements, creating visually impressive content.",
         imageUrl: MotionMarvels,
-        imageUrlsmall:MotionMarvelsSmall
+        imageUrlsmall: MotionMarvelsSmall,
       },
     ],
+  },
+];
+
+export const Products = [
+  {
+    name: "500_Shopify_Themes",
+    description: {
+      h1_title: "500+ Shopify Themes",
+      h2_title: "Upgrade Your Online Store with 500+ Shopify Themes",
+      p: "Enhance your online business effortlessly with our handpicked selection of 500+ Shopify themes. Transform your digital storefront and capture your audience's attention right from the start.",
+      h3_title1:'Simple Features for a Better Storefront:',
+      h3_list1:[
+        "Wide Variety: Choose from 500+ easy-to-use Shopify themes designed for different businesses and styles.",
+        "Mobile-Friendly: Adapt seamlessly to mobile users, ensuring a smooth shopping experience on any device.",
+        "Easy Customization: Personalize your store hassle-free, creating a unique brand look without needing coding skills",
+        "Quick Loading: Keep visitors engaged with fast-loading themes, reducing bounce rates."
+      ],
+      h3_title2:'Real Benefits for Your Business:',
+      h3_list2:[
+        "Professional Look: Boost customer confidence with visually appealing themes that convey trustworthiness.",
+        "Higher Sales: Drive more sales with an intuitive design that enhances the overall shopping experience.",
+        "Time and Cost Saving: Skip the coding hassles. Save time and resources with easy customization, allowing you to focus on your business.",
+      ],
+
+      h3_title3:'Feel the Change:',
+      h3_description3:"Experience the excitement of a dynamic online presence. Our Shopify themes not only improve your store but also bring a sense of pride and satisfaction. Stand out in the crowded digital space with a storefront that truly represents your brand. ",
+      h3_title4:'Ready to Upgrade Your Online Store?',
+      h3_description4:"Take a step towards a visually appealing and high-performing online store. Explore our diverse collection of Shopify themes today and witness the change. Your success story starts with a click – update your storefront now!"
+    },
   },
 ];
 

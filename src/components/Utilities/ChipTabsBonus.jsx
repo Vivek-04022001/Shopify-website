@@ -1,38 +1,34 @@
 import Chip from "./Chip";
-import { useState, useContext, useEffect } from "react";
-import { CardContext } from "../../context/CardContext";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  BonusTabStatus,
+  TabsValue,
+  setSelectedBonusTab,
+} from "../../store/products/productsSlice";
 
 const ChipTabsBonus = () => {
-  const {  setSelectedBonusTab, selectedBonusTab } =
-    useContext(CardContext);
+  const currentBonusTab = useSelector(BonusTabStatus);
+  const tabs = useSelector(TabsValue);
+  const dispatch = useDispatch();
 
-  const [selected, setSelected] = useState(selectedBonusTab);
-  
-  useEffect(() => {
-    selectedBonusTab !== selected && setSelectedBonusTab(selected);
-  }, [selected]);
-
-  const handleSelected = (text) => {
-    if (text !== selected) {
-      setSelected(text);
+  const handleSelectTab = (tab) => {
+    if (tab !== currentBonusTab) {
+      dispatch(setSelectedBonusTab(tab));
     }
   };
   return (
     <div className="grid w-full grid-cols-3 items-center justify-center gap-4 text-lg  md:gap-12 md:text-2xl">
-      { ["Mega", "Pro", "Arsenal"].map((tab) => (
+      {tabs.map((tab) => (
         <Chip
           text={tab}
-          selected={selectedBonusTab === tab}
-          setSelected={handleSelected}
+          selected={currentBonusTab === tab}
+          setSelected={handleSelectTab}
           key={tab}
-          type={'bonus'}
+          type={"bonus"}
         />
       ))}
     </div>
   );
 };
-
-
-
 
 export default ChipTabsBonus;

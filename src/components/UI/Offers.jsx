@@ -11,6 +11,7 @@ const Offers = () => {
             Opportunity
           </h2>
           <h2 className="highlight text-xl font-bold">Our Offers</h2>
+          
           <ChipTabsProduct />
           <Cards type={"products"} />
         </div>

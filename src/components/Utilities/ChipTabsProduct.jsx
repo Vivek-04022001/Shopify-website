@@ -1,36 +1,31 @@
 import Chip from "./Chip";
-import { useState, useContext, useEffect } from "react";
-import { CardContext } from "../../context/CardContext";
+import { useSelector, useDispatch } from "react-redux";
+import {
+  ProductTabStatus,
+  TabsValue,
+} from "../../store/products/productsSlice";
+import { setSelectedProductTab } from "../../store/products/productsSlice";
 
 const ChipTabsProduct = () => {
-  const {
-    selectedProductTab,
-    setSelectedProductTab,
+  const currentProductTab = useSelector(ProductTabStatus);
+  const tabs = useSelector(TabsValue);
+  const dispatch = useDispatch();
 
-    tabValue,
-  } = useContext(CardContext);
-
-  const [selected, setSelected] = useState(selectedProductTab);
-
-  useEffect(() => {
-    selectedProductTab !== selected && setSelectedProductTab(selected);
-  }, [selected]);
-
-  const handleSelected = (text) => {
-    if (text !== selected) {
-      setSelected(text);
+  const handleSelectTab = (tab) => {
+    if (tab !== currentProductTab) {
+      dispatch(setSelectedProductTab(tab));
     }
   };
 
   return (
     <div className="grid w-full grid-cols-3  items-center justify-center gap-4 text-lg  md:gap-12 md:text-2xl">
-      {["Mega", "Pro", "Arsenal"].map((tab, index) => (
+      {tabs.map((tab, index) => (
         <Chip
           text={tab}
-          selected={selected === tab}
-          setSelected={handleSelected}
+          selected={currentProductTab === tab}
+          setSelected={handleSelectTab}
           key={index}
-          type={'product'}
+          type={"product"}
         />
       ))}
     </div>
