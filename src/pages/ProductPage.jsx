@@ -1,7 +1,6 @@
 import Image1 from "../assets/Showcase/2000+motionmarvels/1st.png";
 import { Products } from "../Data/Data";
 import { useState } from "react";
-import ReactImageMagnify from "react-image-magnify";
 
 const ProductPage = () => {
   const { name, description, images } = Products[0];
@@ -10,11 +9,8 @@ const ProductPage = () => {
     <section>
       <div className="container mx-auto max-w-6xl min-h-screen flex">
         <div className="flex gap-10 items-center">
-          {/* image carousel */}
-         
           <div className="w-1/2">
             <Carousel images={images} />
-          
           </div>
 
           {/* description */}
@@ -47,9 +43,6 @@ const ProductPage = () => {
         </div>
       </div>
     </section>
-    // <section className=" flex w-screen h-screen justify-center">
-    //   <ImageZoom imageUrl={images[0]} />
-    // </section>
   );
 };
 
@@ -64,7 +57,10 @@ const Carousel = ({ images }) => {
     <>
       <div className="carousel w-full ">
         <div className="carousel-item relative w-full">
-          <img src={images[currentImageIndex]} className="w-full " />
+          {/* <img src={images[currentImageIndex]} className="w-full " /> */}
+          
+            <ImageMagnifier imgUrl={images[currentImageIndex]} />
+          
           <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a
               onClick={() =>
@@ -111,42 +107,50 @@ const Carousel = ({ images }) => {
   );
 };
 
-const ImageZoom = ({ imageUrl }) => {
+const ImageMagnifier = ({ imgUrl }) => {
+  const [position, setPosition] = useState({ x: 0, y: 0 });
+  const [showMagnifier, setShowMagnifier] = useState(false);
+  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
+
+  const handleMouseHover = (e) => {
+    const { left, top, width, height } =
+      e.currentTarget.getBoundingClientRect();
+    const x = ((e.pageX - left) / width) * 100;
+    const y = ((e.pageY - top) / height) * 100;
+    setPosition({ x, y });
+
+    setCursorPosition({ x: e.pageX - left, y: e.pageY - top });
+  };
+
   return (
-    <div className="border border-red-400 w-[40%] relative overflow-hidden">
-      <ReactImageMagnify
-        {...{
-          smallImage: {
-            alt: "Wristwatch by Versace",
-            isFluidWidth: true,
-            src: imageUrl,
-            // sizes: "(max-width: 880px) 100vw, (max-width: 100px) 30vw, 360px",
-          },
-          largeImage: {
-            src: imageUrl,
-            width: 1000,
-            height: 1000,
-          },
-          lensStyle: { backgroundColor: "red" },
-          enlargedImageStyle: {
-            // position: "absolute",
-            zIndex: 1,
-            width:'200%',
-            border:'1px solid blue'
-          },
-        }}
-        {...{
-          isHintEnabled: true,
-          shouldHideHintAfterFirstActivation: false,
-          enlargedImagePosition: "over",
-          enlargedImageContainerDimensions:{
-            width:'1200%',
-            height:'100%'
-          },
-         shouldUsePositiveSpaceLens:true,
-        }}
-      />
+    <div
+      className="relative"
+      onMouseEnter={() => setShowMagnifier(true)}
+      onMouseLeave={() => setShowMagnifier(false)}
+      onMouseMove={handleMouseHover}
+    >
+      <img className="w-full" src={imgUrl} alt="" />
+
+      {showMagnifier && (
+        <div
+          style={{
+            position: "absolute",
+            left: `${cursorPosition.x - 100}px`,
+            top: `${cursorPosition.y - 100}px`,
+            pointerEvents: "none",
+          }}
+        >
+          <div
+            className="w-[200px] h-[200px] border-slate-400 border-2 "
+            style={{
+              backgroundImage: `url(${imgUrl})`,
+              backgroundPosition: `${position.x}% ${position.y}%`,
+            }}
+          />
+        </div>
+      )}
     </div>
   );
 };
+
 export default ProductPage;
