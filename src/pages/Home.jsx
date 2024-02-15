@@ -18,7 +18,7 @@ const Home = () => {
     <div className="relative">
       <Suspense fallback={<Loader />}>
         <Header />
-        {/* <Hero /> */}
+        <Hero />
         {/* <ShiftingCountdown /> */}
         <Offers />
         <Bonus />

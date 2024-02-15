@@ -34,6 +34,10 @@ import ChromaCraftPackSmall from "../assets/mobile/Chroma-Craft-Pack.png";
 import MotionMarvelsSmall from "../assets/mobile/Motion-Marvels.png";
 
 // showcase images
+import shopifythemes1 from '../assets/Showcase/shopifythemes/1st.png'
+import shopifythemes2 from '../assets/Showcase/shopifythemes/2nd.png'
+import shopifythemes3 from '../assets/Showcase/shopifythemes/3rd.png'
+import shopifythemes4 from '../assets/Showcase/shopifythemes/4th.png'
 
 const Data = [
   {
@@ -321,26 +325,28 @@ export const Products = [
       h1_title: "500+ Shopify Themes",
       h2_title: "Upgrade Your Online Store with 500+ Shopify Themes",
       p: "Enhance your online business effortlessly with our handpicked selection of 500+ Shopify themes. Transform your digital storefront and capture your audience's attention right from the start.",
-      h3_title1:'Simple Features for a Better Storefront:',
+      h3_title1:'Simple Features for a Better Storefront',
       h3_list1:[
         "Wide Variety: Choose from 500+ easy-to-use Shopify themes designed for different businesses and styles.",
         "Mobile-Friendly: Adapt seamlessly to mobile users, ensuring a smooth shopping experience on any device.",
         "Easy Customization: Personalize your store hassle-free, creating a unique brand look without needing coding skills",
         "Quick Loading: Keep visitors engaged with fast-loading themes, reducing bounce rates."
       ],
-      h3_title2:'Real Benefits for Your Business:',
+      h3_title2:'Real Benefits for Your Business',
       h3_list2:[
         "Professional Look: Boost customer confidence with visually appealing themes that convey trustworthiness.",
         "Higher Sales: Drive more sales with an intuitive design that enhances the overall shopping experience.",
         "Time and Cost Saving: Skip the coding hassles. Save time and resources with easy customization, allowing you to focus on your business.",
       ],
 
-      h3_title3:'Feel the Change:',
-      h3_description3:"Experience the excitement of a dynamic online presence. Our Shopify themes not only improve your store but also bring a sense of pride and satisfaction. Stand out in the crowded digital space with a storefront that truly represents your brand. ",
+      h3_title3:'Feel the Change',
+      h3_description3:"Experience the excitement of a dynamic online presence. Our Shopify themes not only improve your store but also bring a sense of pride and satisfaction. Stand out in the crowded digital space with a storefront that truly represents your brand.",
       h3_title4:'Ready to Upgrade Your Online Store?',
-      h3_description4:"Take a step towards a visually appealing and high-performing online store. Explore our diverse collection of Shopify themes today and witness the change. Your success story starts with a click – update your storefront now!"
+      h3_description4:"Take a step towards a visually appealing and high-performing online store. Explore our diverse collection of Shopify themes today and witness the change. Your success story starts with a click – update your storefront now"
     },
+    images:[shopifythemes1, shopifythemes2, shopifythemes3, shopifythemes4]
   },
+
 ];
 
 export default Data;
