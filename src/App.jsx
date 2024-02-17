@@ -29,7 +29,7 @@ function App() {
           <Route path="/disclaimer" element={<Disclaimer />} />
           <Route path="/shipping" element={<Shipping />} />
           <Route path="/faq" element={<Faq />} />
-          <Route path='/product_page' element={<ProductPage/>}/>
+          <Route path='/product_page/:product_id' element={<ProductPage/>}/>
         </Routes>
       </Suspense>
     </BrowserRouter>

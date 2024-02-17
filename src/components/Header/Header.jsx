@@ -97,7 +97,7 @@ const Header = () => {
           id="menu"
           class={`${
             hamburger ? "flex" : "hidden"
-          } md:hidden bg-black  absolute top-0 bottom-0 left-0 flex flex-col  self-end  w-full min-h-screen  pt-32 pl-20 space-y-8  uppercase bg-dark`}
+          } md:hidden bg-black  absolute top-0 bottom-0 left-0 flex flex-col  self-end  w-full min-h-screen  pt-32 pl-20 space-y-8  uppercase bg-dark z-10`}
         >
           <a href="#home" onClick={toggleMenu}>
             Home

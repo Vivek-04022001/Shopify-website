@@ -19,12 +19,12 @@ const Home = () => {
       <Suspense fallback={<Loader />}>
         <Header />
         <Hero />
-        {/* <ShiftingCountdown /> */}
+        <ShiftingCountdown />
         <Offers />
         <Bonus />
-        {/* <Pricing /> */}
-        {/* <Testimonials /> */}
-        {/* <Footer /> */}
+        <Pricing />
+        <Testimonials />
+        <Footer />
       </Suspense>
       <ScrollToTopButton/>
     </div>
