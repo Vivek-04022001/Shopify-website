@@ -49,36 +49,34 @@ const Header = () => {
       document.body.classList.add("overflow-hidden");
     }
   };
-
+  const menuItems = [
+    "home",
+    "offer",
+    "bonus",
+    "pricing",
+    "testimonial",
+    "footer",
+  ];
   return (
     <header ref={headerRef} id="header">
       <div className="Container  ">
         <div className="flex items-center justify-between ">
-          <div className="w-[150px] ">
-            <img src={Logo} alt="logo" className="w-full" loading="lazy"/>
+          <div className=" w-[110px] md:w-[150px] ">
+            <img src={Logo} alt="logo" className="w-full" />
           </div>
           {/* --navigation-- */}
-          <div ref={menuRef}  className="navigation">
+          <div ref={menuRef} className="navigation">
             <ul className="hidden md:flex items-center gap-10 text-white capitalize">
-              <li className="hover:text-primary duration-300 transition-all">
-                <a href="#home">Home</a>
-              </li>
-              <li className="hover:text-primary duration-300 transition-all">
-                <a href="#offer">Offers</a>
-              </li>
-              <li className="hover:text-primary duration-300 transition-all">
-                <a href="#bonus">Bonuses</a>
-              </li>
-              <li className="hover:text-primary duration-300 transition-all">
-                <a href="#pricing">Pricing</a>
-              </li>
-              <li className="hover:text-primary duration-300 transition-all">
-                <a href="#testimonial">Testimonials</a>
-              </li>
-              <li className="hover:text-primary duration-300 transition-all">
-                <a href="#footer">Footer</a>
-              </li>
-            
+              {menuItems.map((item) => (
+                <li
+                  key={item}
+                  className="hover:text-primary duration-300 transition-all"
+                >
+                  <a href={`#${item}`}>
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </a>
+                </li>
+              ))}
             </ul>
           </div>
 
@@ -99,25 +97,11 @@ const Header = () => {
             hamburger ? "flex" : "hidden"
           } md:hidden bg-black  absolute top-0 bottom-0 left-0 flex flex-col  self-end  w-full min-h-screen  pt-32 pl-20 space-y-8  uppercase bg-dark z-10`}
         >
-          <a href="#home" onClick={toggleMenu}>
-            Home
-          </a>
-          <a href="#offer" onClick={toggleMenu}>
-            Offers
-          </a>
-          <a href="#bonus" onClick={toggleMenu}>
-            Bonuses
-          </a>
-          <a href="#pricing" onClick={toggleMenu}>
-            Pricing
-          </a>
-          <a href="#testimonial" onClick={toggleMenu}>
-            Testimonials
-          </a>
-          <a href="#footer" onClick={toggleMenu}>
-            Footer
-          </a>
-         
+         {menuItems.map((item) => (
+            <a key={item} href={`#${item}`} onClick={toggleMenu}>
+              {item.charAt(0).toUpperCase() + item.slice(1)}
+            </a>
+          ))}
         </div>
       </div>
     </header>
