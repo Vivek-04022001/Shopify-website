@@ -16,11 +16,12 @@ const ProductPage = () => {
   const dispatch = useDispatch();
   const { product_id } = useParams();
   const selectOptions = useSelector(selectProductOptions);
+  const {selectedProduct, setSelectedProduct} = useState(product_id)
 
   const handleSelectChange = (event) => {
     if (event.target.value) {
       dispatch(setCurrentProduct(event.target.value));
-      console.log(event.target.value);
+      setSelectedProduct(event.target.value)
     }
   };
 
@@ -40,7 +41,7 @@ const ProductPage = () => {
           <select
             className="select select-lg select-bordered w-full max-w-xs mx-auto mb-10"
             onChange={handleSelectChange}
-            value={product_id}
+            value={selectedProduct}
           >
             {selectOptions.map((selectOption, index) => (
               <option key={selectOption + index} value={selectOption}>
