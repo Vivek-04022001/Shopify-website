@@ -15,25 +15,27 @@ import {
 const ProductPage = () => {
   const dispatch = useDispatch();
   const { product_id } = useParams();
-  const selectOptions = useSelector(selectProductOptions);
-  const currentProduct = useSelector(selectCurrentProduct);
-
   const handleSelectChange = (event) => {
     if (event.target.value) {
       dispatch(setCurrentProduct(event.target.value));
     }
-    console.log(`select value ${currentProduct}`);
   };
 
   useEffect(() => {
     dispatch(setProductOptions());
-  }, []);
-
+  }, [product_id, dispatch]);
+  
   useEffect(() => {
     if (product_id) {
       dispatch(setCurrentProduct(product_id));
     }
   }, []);
+
+  const selectOptions = useSelector(selectProductOptions);
+  const currentProduct = useSelector(selectCurrentProduct);
+
+  
+  console.log(currentProduct)
 
   return (
     <>
@@ -52,6 +54,7 @@ const ProductPage = () => {
               </option>
             ))}
           </select>
+          <h1>{currentProduct.name}</h1>
           {/* <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
             <Carousel images={images} />
             <ProductDescription name={name} description={description} />
