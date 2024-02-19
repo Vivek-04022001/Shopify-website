@@ -7,7 +7,7 @@ import "./index.css";
 // import { CardProvider } from "./context/CardContext.jsx";
 import { store } from "./store/store.js";
 import { Provider } from "react-redux";
-import { selectProductOptions, setProductOptions } from "./store/productspage/productspageSlice.js";
+import {  setProductOptions } from "./store/productspage/productspageSlice.js";
 
 store.dispatch(setProductOptions())
 
