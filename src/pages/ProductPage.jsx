@@ -1,47 +1,39 @@
-import { Products } from "../Data/Data";
+// import { Products } from "../Data/Data";
 import { useEffect, useState, useMemo } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import ProductDescription from "../components/ProductDescription";
 import Footer from "../components/Footer/Footer";
-
-const defaultSelectOptions = (Products) => {
-  const options = Products.map((product) => product.description.h1_title);
-  return options;
-};
+import {
+  selectCurrentProduct,
+  selectProductOptions,
+  setCurrentProduct,
+  setProductOptions,
+} from "../store/productspage/productspageSlice";
 
 const ProductPage = () => {
+  const dispatch = useDispatch();
   const { product_id } = useParams();
-
-  const selectOptions = useMemo(
-    () => defaultSelectOptions(Products),
-    [Products]
-  );
-  const findProduct = (id) => {
-    const formattedId = id.toLowerCase().replace(/\s+/g, "");
-    return Products.find(
-      (product) =>
-        product.description.h1_title.toLowerCase().replace(/\s+/g, "") ===
-        formattedId
-    );
-  };
-
-  const [selectedProduct, setSelectedProduct] = useState(
-    findProduct(product_id)
-  );
-  const [currentProduct, setCurrentProduct] = useState(
-    selectedProduct || Products[0]
-  );
+  const selectOptions = useSelector(selectProductOptions);
+  const currentProduct = useSelector(selectCurrentProduct);
 
   const handleSelectChange = (event) => {
-    setSelectedProduct(findProduct(event.target.value));
+    if (event.target.value) {
+      dispatch(setCurrentProduct(event.target.value));
+    }
+    console.log(`select value ${currentProduct}`);
   };
 
   useEffect(() => {
-    setCurrentProduct(selectedProduct || Products[0]);
-  }, [selectedProduct]);
+    dispatch(setProductOptions());
+  }, []);
 
-  const { name, description, images } = currentProduct;
+  useEffect(() => {
+    if (product_id) {
+      dispatch(setCurrentProduct(product_id));
+    }
+  }, []);
 
   return (
     <>
@@ -60,13 +52,13 @@ const ProductPage = () => {
               </option>
             ))}
           </select>
-          <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
+          {/* <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
             <Carousel images={images} />
             <ProductDescription name={name} description={description} />
-          </div>
+          </div> */}
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };
