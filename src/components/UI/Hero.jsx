@@ -1,17 +1,13 @@
+import { useEffect } from "react";
 import "../styles/hero.css";
+import { useDispatch } from "react-redux";
+import { setProductOptions } from "../../store/productspage/productspageSlice";
 
 const Hero = () => {
-  // const videoOpts = {
-  //   playerVars: {
-  //     autoplay: 1,
-  //     loop: 1,
-  //     controls: 0,
-  //   },
-  // };
+ 
+
   const videoUrl =
     "https://www.youtube.com/embed/fAi4N8i69kM?si=ccevi-Sg86XPxLZQ";
-
-  const videoId = videoUrl.split("/").pop().split("?")[0];
 
   return (
     <section className="'hero__section" id="home">

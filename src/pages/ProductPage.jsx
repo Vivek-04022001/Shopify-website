@@ -15,27 +15,20 @@ import {
 const ProductPage = () => {
   const dispatch = useDispatch();
   const { product_id } = useParams();
+  const selectOptions = useSelector(selectProductOptions);
+
   const handleSelectChange = (event) => {
     if (event.target.value) {
       dispatch(setCurrentProduct(event.target.value));
+      console.log(event.target.value);
     }
   };
 
   useEffect(() => {
-    dispatch(setProductOptions());
-  }, [product_id, dispatch]);
-  
-  useEffect(() => {
-    if (product_id) {
-      dispatch(setCurrentProduct(product_id));
-    }
+    dispatch(setCurrentProduct(product_id));
   }, []);
 
-  const selectOptions = useSelector(selectProductOptions);
   const currentProduct = useSelector(selectCurrentProduct);
-
-  
-  console.log(currentProduct)
 
   return (
     <>
@@ -47,6 +40,7 @@ const ProductPage = () => {
           <select
             className="select select-lg select-bordered w-full max-w-xs mx-auto mb-10"
             onChange={handleSelectChange}
+            value={product_id}
           >
             {selectOptions.map((selectOption, index) => (
               <option key={selectOption + index} value={selectOption}>
@@ -54,11 +48,16 @@ const ProductPage = () => {
               </option>
             ))}
           </select>
-          <h1>{currentProduct.name}</h1>
-          {/* <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
-            <Carousel images={images} />
-            <ProductDescription name={name} description={description} />
-          </div> */}
+
+          {currentProduct && (
+            <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
+              <Carousel images={currentProduct.images} />
+              <ProductDescription
+                name={currentProduct.name}
+                description={currentProduct.description}
+              />
+            </div>
+          )}
         </div>
       </section>
       {/* <Footer /> */}

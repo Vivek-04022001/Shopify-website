@@ -7,6 +7,11 @@ import "./index.css";
 // import { CardProvider } from "./context/CardContext.jsx";
 import { store } from "./store/store.js";
 import { Provider } from "react-redux";
+import { selectProductOptions, setProductOptions } from "./store/productspage/productspageSlice.js";
+
+store.dispatch(setProductOptions())
+const selectOptions = store.getState(selectProductOptions)
+
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

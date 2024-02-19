@@ -17,14 +17,15 @@ const productspageSlice = createSlice({
       );
     },
     setCurrentProduct(state, action) {
-        if (action.payload) {
-          const formattedId = action.payload.toLowerCase().replace(/\s+/g, "");
-          state.currentProduct = state.allProductDetails.find(
-            (product) =>
-              product.description.h1_title.toLowerCase().replace(/\s+/g, "") === formattedId
-          );
-        }
-      },
+      if (action.payload) {
+        const formattedId = action.payload.toLowerCase().replace(/\s+/g, "");
+        state.currentProduct = state.allProductDetails.find(
+          (product) =>
+            product.description.h1_title.toLowerCase().replace(/\s+/g, "") ===
+            formattedId
+        );
+      }
+    },
   },
 });
 
