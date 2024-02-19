@@ -1,47 +1,34 @@
-import { Products } from "../Data/Data";
+// import { Products } from "../Data/Data";
 import { useEffect, useState, useMemo } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { Link, useParams } from "react-router-dom";
 import Carousel from "../components/Carousel";
 import ProductDescription from "../components/ProductDescription";
 import Footer from "../components/Footer/Footer";
-
-const defaultSelectOptions = (Products) => {
-  const options = Products.map((product) => product.description.h1_title);
-  return options;
-};
+import {
+  selectCurrentProduct,
+  selectProductOptions,
+  setCurrentProduct,
+  setProductOptions,
+} from "../store/productspage/productspageSlice";
 
 const ProductPage = () => {
+  const dispatch = useDispatch();
   const { product_id } = useParams();
-
-  const selectOptions = useMemo(
-    () => defaultSelectOptions(Products),
-    [Products]
-  );
-  const findProduct = (id) => {
-    const formattedId = id.toLowerCase().replace(/\s+/g, "");
-    return Products.find(
-      (product) =>
-        product.description.h1_title.toLowerCase().replace(/\s+/g, "") ===
-        formattedId
-    );
-  };
-
-  const [selectedProduct, setSelectedProduct] = useState(
-    findProduct(product_id)
-  );
-  const [currentProduct, setCurrentProduct] = useState(
-    selectedProduct || Products[0]
-  );
+  const selectOptions = useSelector(selectProductOptions);
 
   const handleSelectChange = (event) => {
-    setSelectedProduct(findProduct(event.target.value));
+    if (event.target.value) {
+      dispatch(setCurrentProduct(event.target.value));
+      console.log(event.target.value);
+    }
   };
 
   useEffect(() => {
-    setCurrentProduct(selectedProduct || Products[0]);
-  }, [selectedProduct]);
+    dispatch(setCurrentProduct(product_id));
+  }, []);
 
-  const { name, description, images } = currentProduct;
+  const currentProduct = useSelector(selectCurrentProduct);
 
   return (
     <>
@@ -53,6 +40,7 @@ const ProductPage = () => {
           <select
             className="select select-lg select-bordered w-full max-w-xs mx-auto mb-10"
             onChange={handleSelectChange}
+            value={product_id}
           >
             {selectOptions.map((selectOption, index) => (
               <option key={selectOption + index} value={selectOption}>
@@ -60,13 +48,19 @@ const ProductPage = () => {
               </option>
             ))}
           </select>
-          <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
-            <Carousel images={images} />
-            <ProductDescription name={name} description={description} />
-          </div>
+
+          {currentProduct && (
+            <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
+              <Carousel images={currentProduct.images} />
+              <ProductDescription
+                name={currentProduct.name}
+                description={currentProduct.description}
+              />
+            </div>
+          )}
         </div>
       </section>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

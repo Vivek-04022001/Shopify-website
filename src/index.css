@@ -67,11 +67,11 @@ body {
 }
 
 .heading-md {
-  @apply mx-auto max-w-3xl text-center text-4xl font-extrabold md:text-5xl;
+  @apply mx-auto max-w-3xl text-center text-3xl font-extrabold md:text-4xl lg:text-5xl;
 }
 
 .heading-lg {
-  @apply text-6xl font-bold;
+  @apply text-4xl md:text-5xl lg:text-6xl font-bold;
 }
 
 /* text-gradient */
