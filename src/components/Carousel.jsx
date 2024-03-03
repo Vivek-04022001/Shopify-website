@@ -1,4 +1,4 @@
-import { useCallback, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import LazyImg from "./LazyImg";
 
 const Carousel = ({ images, imagesSmall }) => {
@@ -7,6 +7,10 @@ const Carousel = ({ images, imagesSmall }) => {
   const handleImageClick = useCallback((index) => {
     setCurrentImageIndex(index);
   }, []);
+
+  useEffect(() => {
+    setCurrentImageIndex(0);
+  }, [images]);
 
   return (
     <>
@@ -22,7 +26,7 @@ const Carousel = ({ images, imagesSmall }) => {
               <div className="error-message">No images available</div> // Placeholder for error state
             )}
 
-            {/* <ImageMagnifier imgUrl={images[currentImageIndex]} /> */}
+            
 
             {images &&
               images.length > 1 && ( // Error handling
