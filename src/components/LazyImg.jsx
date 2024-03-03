@@ -1,4 +1,4 @@
-import React, {useState } from "react";
+import React, { useState } from "react";
 
 const LazyImg = ({ imageUrl, imageUrlsmall }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
@@ -14,9 +14,11 @@ const LazyImg = ({ imageUrl, imageUrlsmall }) => {
   };
 
   return (
-    <div className={`blur-load ${isImageLoaded && 'loaded'} `} style={ContainerStyle}>
+    <div
+      className={`blur-load ${isImageLoaded && "loaded"} `}
+      style={ContainerStyle}
+    >
       <img
-       
         src={imageUrl}
         alt={imageUrl}
         loading="lazy"
