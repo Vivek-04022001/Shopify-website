@@ -61,7 +61,6 @@ const Carousel = ({ images, imagesSmall }) => {
               )}
           </div>
         </div>
-       
 
         {imagesSmall && imagesSmall.length > 1 ? ( // Error Handling
           <div className="minimap flex justify-center space-x-2 mt-4">
