@@ -33,7 +33,8 @@ import InstagramCourseSmall from "../assets/mobile/Instagram-Course.png";
 import ChromaCraftPackSmall from "../assets/mobile/Chroma-Craft-Pack.png";
 import MotionMarvelsSmall from "../assets/mobile/Motion-Marvels.png";
 
-// showcase images
+
+// showcase images both small and large
 
 // shopifythemes
 import shopifythemes1 from "../assets/Showcase/shopifythemes/1st.png";
@@ -41,14 +42,26 @@ import shopifythemes2 from "../assets/Showcase/shopifythemes/2nd.png";
 import shopifythemes3 from "../assets/Showcase/shopifythemes/3rd.png";
 import shopifythemes4 from "../assets/Showcase/shopifythemes/4th.png";
 
+import shopifythemes1small from "../assets/Showcase2/shopifythemes/1st.jpg";
+import shopifythemes2small from "../assets/Showcase2/shopifythemes/2nd.jpg";
+import shopifythemes3small from "../assets/Showcase2/shopifythemes/3rd.jpg";
+import shopifythemes4small from "../assets/Showcase2/shopifythemes/4th.jpg";
+
+
 // Dropshipping Mastery
 import dropshipping1 from '../assets/Showcase/dropshipping/1st.png'
+
+import dropshipping1small from '../assets/Showcase2/dropshipping/1st.jpg'
 
 // Email Marketing Hacks
 import emailMarketingHacks1 from '../assets/Showcase/emailmarketing/1st.png'
 
+import emailMarketingHacks1small from '../assets/Showcase2/emailmarketing/1st.jpg'
+
+
+
 // canva templates
-import canva1 from '../assets/Showcase/canva/1st.png'
+// import canva1 from '../assets/Showcase/canva/1st.png'
 
 
 
@@ -58,6 +71,11 @@ import instamotion2 from '../assets/Showcase/8000+stories/2nd.png'
 import instamotion3 from '../assets/Showcase/8000+stories/3rd.gif'
 import instamotion4 from '../assets/Showcase/8000+stories/4th.gif'
 
+import instamotion1small from '../assets/Showcase2/8000+stories/1st.jpg'
+import instamotion2small from '../assets/Showcase2/8000+stories/2nd.jpg'
+import instamotion3small from '../assets/Showcase2/8000+stories/3rd.gif'
+import instamotion4small from '../assets/Showcase2/8000+stories/4th.gif'
+
 
 
 // social media pack
@@ -66,26 +84,51 @@ import socialMedia2 from '../assets/Showcase/socialmediapack/2nd.png'
 import socialMedia3 from '../assets/Showcase/socialmediapack/3rd.gif'
 import socialMedia4 from '../assets/Showcase/socialmediapack/4th.gif'
 
+import socialMedia1small from '../assets/Showcase2/socialmediapack/1st.jpg'
+import socialMedia2small from '../assets/Showcase2/socialmediapack/2nd.jpg'
+import socialMedia3small from '../assets/Showcase2/socialmediapack/3rd.gif'
+import socialMedia4small from '../assets/Showcase2/socialmediapack/4th.gif'
+
 // ai image library
 import aiImage1 from '../assets/Showcase/ailibrary/1st.png'
 import aiImage2 from '../assets/Showcase/ailibrary/2nd.png'
 import aiImage3 from '../assets/Showcase/ailibrary/3rd.png'
 
+import aiImage1small from '../assets/Showcase2/ailibrary/1st.jpg'
+import aiImage2small from '../assets/Showcase2/ailibrary/2nd.jpg'
+import aiImage3small from '../assets/Showcase2/ailibrary/3rd.jpg'
+
 // Youtube growth bundle
 import youtube1 from '../assets/Showcase/youtubegrowth/1st.png'
 import youtube2 from '../assets/Showcase/youtubegrowth/2nd.png'
+
+import youtube1small from '../assets/Showcase2/youtubegrowth/1st.jpg'
+import youtube2small from '../assets/Showcase2/youtubegrowth/2nd.jpg'
 
 // Instagram Mastery course
 import instagram1 from '../assets/Showcase/instagramgrowth/1st.png'
 import instagram2 from '../assets/Showcase/instagramgrowth/2nd.png'
 
+
+import instagram1small from '../assets/Showcase2/instagramgrowth/1st.jpg'
+import instagram2small from '../assets/Showcase2/instagramgrowth/2nd.jpg'
+
 // Shade fusion pack
 import shade1 from '../assets/Showcase/5000+gradientoverlays/1st.png'
+
+import shade1small from '../assets/Showcase2/5000+gradientoverlays/1st.jpg'
+
 
 // lightroom
 import light1 from '../assets/Showcase/lightroompresets/1st.png'
 import light2 from '../assets/Showcase/lightroompresets/2nd.png'
 import light3 from '../assets/Showcase/lightroompresets/3rd.png'
+
+import light1small from '../assets/Showcase2/lightroompresets/1st.jpg'
+import light2small from '../assets/Showcase2/lightroompresets/2nd.jpg'
+import light3small from '../assets/Showcase2/lightroompresets/3rd.jpg'
+
+
 
 // Chroma craft
 import chroma1 from '../assets/Showcase/videogradient/1st.png'
@@ -94,13 +137,23 @@ import chroma3 from '../assets/Showcase/videogradient/3rd.png'
 import chroma4 from '../assets/Showcase/videogradient/4th.png'
 import chroma5 from '../assets/Showcase/videogradient/5th.png'
 
+import chroma1small from '../assets/Showcase2/videogradient/1st.jpg'
+import chroma2small from '../assets/Showcase2/videogradient/2nd.jpg'
+import chroma3small from '../assets/Showcase2/videogradient/3rd.jpg'
+import chroma4small from '../assets/Showcase2/videogradient/4th.jpg'
+import chroma5small from '../assets/Showcase2/videogradient/5th.jpg'
+
 // motion marvels
 import motionMarvel1 from '../assets/Showcase/2000+motionmarvels/1st.png'
 import motionMarvel2 from '../assets/Showcase/2000+motionmarvels/2nd.png'
 import motionMarvel3 from '../assets/Showcase/2000+motionmarvels/3rd.png'
 
+import motionMarvel1small from '../assets/Showcase2/2000+motionmarvels/1st.jpg'
+import motionMarvel2small from '../assets/Showcase2/2000+motionmarvels/2nd.jpg'
+import motionMarvel3small from '../assets/Showcase2/2000+motionmarvels/3rd.jpg'
 // Facebook ads hacks
 import facebook1 from '../assets/Showcase/facebook/1st.png'
+import facebook1small from '../assets/Showcase2/facebook/1st.jpg'
 
 
 const Data = [
@@ -411,6 +464,7 @@ export const Products = [
         "Take a step towards a visually appealing and high-performing online store. Explore our diverse collection of Shopify themes today and witness the change. Your success story starts with a click – update your storefront now",
     },
     images: [shopifythemes1, shopifythemes2, shopifythemes3, shopifythemes4],
+    imagesSmall: [shopifythemes1small, shopifythemes2small, shopifythemes3small, shopifythemes4small],
   },
 
   {
@@ -440,7 +494,8 @@ export const Products = [
       h3_description4:
         "Take the leap into the world of dropshipping success. Enroll now in our Dropshipping Mastery Course, and let your journey as an entrepreneur begin. Your success story is just a click away",
     },
-    images:[dropshipping1]
+    images:[dropshipping1],
+    imagesSmall:[dropshipping1small],
   },
 
   {
@@ -469,7 +524,8 @@ export const Products = [
       h3_description4:
         "Take the leap into a world of effective communication and heightened success. Embrace the Email Marketing Hacks that turn your business dreams into reality. Act now – your success story starts with a click",
     },
-    images:[emailMarketingHacks1]
+    images:[emailMarketingHacks1],
+    imagesSmall:[emailMarketingHacks1small],
   },
 
   // {
@@ -522,7 +578,8 @@ export const Products = [
       h3_description4:
         "Bring your Instagram stories to life with InstaMotion Marvels. Make your content stand out – upgrade today",
     },
-    images:[instamotion1,instamotion2,instamotion3,instamotion4,]
+    images:[instamotion1,instamotion2,instamotion3,instamotion4,],
+    imagesSmall:[instamotion1small,instamotion2small,instamotion3small,instamotion4small,],
   },
 
   {
@@ -549,7 +606,8 @@ export const Products = [
       h3_description4:
         "Experience the impact of our Social Media Pack. Elevate your brand, engage your audience, and witness the transformation. Your social success story begins here. Act now",
     },
-    images:[socialMedia1,socialMedia2,socialMedia3,socialMedia4,]
+    images:[socialMedia1,socialMedia2,socialMedia3,socialMedia4,],
+    imagesSmall:[socialMedia1small,socialMedia2small,socialMedia3small,socialMedia4small,],
   },
 
   {
@@ -578,7 +636,8 @@ export const Products = [
       h3_description4:
         "Step into the future of visual content creation. Explore our AI Image Library with 3000 images across 10 niches today. Your content journey starts here. Act now",
     },
-    images:[aiImage1,aiImage2,aiImage3,]
+    images:[aiImage1,aiImage2,aiImage3,],
+    imagesSmall:[aiImage1small,aiImage2small,aiImage3small,],
   },
 
   {
@@ -606,7 +665,8 @@ export const Products = [
       h3_description4:
         "Take the next step in your YouTube journey with the YouTube Growth Bundle. Improve your content, engage your audience, and witness your channel's growth. Act now and fuel your success",
     },
-    images:[youtube1,youtube2,]
+    images:[youtube1,youtube2,],
+    imagesSmall:[youtube1small,youtube2small,]
   },
 
   {
@@ -634,7 +694,8 @@ export const Products = [
       h3_description4:
         "Start your Instagram journey! Enroll now and see how it transforms your social media experience. Your Instagram success begins today. Act now",
     },
-    images:[instagram1,instagram2,]
+    images:[instagram1,instagram2,],
+    imagesSmall:[instagram1small,instagram2small,],
   },
 
   {
@@ -663,7 +724,8 @@ export const Products = [
       h3_description4:
         "Dive into endless color possibilities with the Shade Fusion Pack. Elevate your designs, save time, and express your creativity without a hitch. Start your colorful journey now",
     },
-    images:[shade1]
+    images:[shade1],
+    imagesSmall:[shade1small],
   },
 
   {
@@ -691,7 +753,8 @@ export const Products = [
       h3_description4:
         "Explore the straightforward benefits of the 15,000+ Lightroom Presets Pack now. Improve your images effortlessly and notice the impact",
     },
-    images:[light1,light2,light3,]
+    images:[light1,light2,light3,],
+    imagesSmall:[light1small,light2small,light3small,],
   },
 
   {
@@ -719,7 +782,8 @@ export const Products = [
       h3_description4:
         "Step into the world of ChromaCraft now. Enhance your videos, tell compelling stories, and captivate your audience effortlessly",
     },
-    images:[chroma1,chroma2,chroma3,chroma4,chroma5,]
+    images:[chroma1,chroma2,chroma3,chroma4,chroma5,],
+    imagesSmall:[chroma1small,chroma2small,chroma3small,chroma4small,chroma5small,],
   },
 
   {
@@ -748,7 +812,8 @@ export const Products = [
       h3_description4:
         "Dive into creativity with Motion Marvels. Enhance your projects, captivate your audience, and redefine your creative boundaries",
     },
-    images:[motionMarvel1,motionMarvel2,motionMarvel3,]
+    images:[motionMarvel1,motionMarvel2,motionMarvel3,],
+    imagesSmall:[motionMarvel1small,motionMarvel2small,motionMarvel3small,],
   },
 
   {
@@ -778,7 +843,8 @@ export const Products = [
       h3_description4:
         "Don't miss the chance to refine your advertising strategy. Dive into Facebook Ad Hacks today and witness the impact firsthand!Improve your advertising effectiveness—your success story begins here!",
     },
-    images:[facebook1]
+    images:[facebook1],
+    imagesSmall:[facebook1small],
   },
 ];
 

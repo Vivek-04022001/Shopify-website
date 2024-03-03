@@ -1,6 +1,7 @@
 import { useCallback, useState } from "react";
+import LazyImg from "./LazyImg";
 
-const Carousel = ({ images }) => {
+const Carousel = ({ images, imagesSmall }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const handleImageClick = useCallback((index) => {
@@ -12,47 +13,59 @@ const Carousel = ({ images }) => {
       <div className="w-full px-4 md:w-1/2">
         <div className="carousel w-full ">
           <div className="carousel-item relative w-full">
-            <img
-              src={images[currentImageIndex]}
-              className="w-full "
-              loading="lazy"
-            />
+            {images && images.length > 0 ? ( // Error handling
+              <LazyImg
+                imageUrl={images[currentImageIndex]}
+                imageUrlSmall={imagesSmall[currentImageIndex]}
+              />
+            ) : (
+              <div className="error-message">No images available</div> // Placeholder for error state
+            )}
 
             {/* <ImageMagnifier imgUrl={images[currentImageIndex]} /> */}
 
-            {images.length > 1 && (
-              <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a
-                  onClick={() =>
-                    handleImageClick(
-                      currentImageIndex === 0
-                        ? images.length - 1
-                        : currentImageIndex - 1
-                    )
-                  }
-                  className="btn btn-circle"
+            {images &&
+              images.length > 1 && ( // Error handling
+                <div
+                  className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+                  role="navigation" // ARIA role for accessibility
+                  aria-label="Carousel Navigation"
                 >
-                  ❮
-                </a>
-                <a
-                  onClick={() =>
-                    handleImageClick(
-                      currentImageIndex === images.length - 1
-                        ? 0
-                        : currentImageIndex + 1
-                    )
-                  }
-                  className="btn btn-circle"
-                >
-                  ❯
-                </a>
-              </div>
-            )}
+                  <button
+                    onClick={() =>
+                      handleImageClick(
+                        currentImageIndex === 0
+                          ? images.length - 1
+                          : currentImageIndex - 1
+                      )
+                    }
+                    className="btn btn-circle"
+                    aria-label="Previous Image"
+                  >
+                    ❮
+                  </button>
+                  <button
+                    onClick={() =>
+                      handleImageClick(
+                        currentImageIndex === images.length - 1
+                          ? 0
+                          : currentImageIndex + 1
+                      )
+                    }
+                    className="btn btn-circle"
+                    aria-label="Next Image"
+                  >
+                    ❯
+                  </button>
+                </div>
+              )}
           </div>
         </div>
-        {images.length > 1 && (
+       
+
+        {imagesSmall && imagesSmall.length > 1 ? ( // Error Handling
           <div className="minimap flex justify-center space-x-2 mt-4">
-            {images.map((image, index) => (
+            {imagesSmall.map((image, index) => (
               <img
                 key={index}
                 src={image}
@@ -62,9 +75,12 @@ const Carousel = ({ images }) => {
                     : "w-16 h-16"
                 }
                 onClick={() => handleImageClick(index)}
+                alt={`Carousel thumbnail ${index + 1}`}
               />
             ))}
           </div>
+        ) : (
+          <div className="error-message">No thumbnail images available</div>
         )}
       </div>
     </>

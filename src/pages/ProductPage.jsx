@@ -16,12 +16,12 @@ const ProductPage = () => {
   const dispatch = useDispatch();
   const { product_id } = useParams();
   const selectOptions = useSelector(selectProductOptions);
-  const {selectedProduct, setSelectedProduct} = useState(product_id)
+  const [selectedProduct, setSelectedProduct] = useState(product_id);
 
   const handleSelectChange = (event) => {
     if (event.target.value) {
       dispatch(setCurrentProduct(event.target.value));
-      setSelectedProduct(event.target.value)
+      setSelectedProduct(event.target.value);
     }
   };
 
@@ -30,6 +30,8 @@ const ProductPage = () => {
   }, []);
 
   const currentProduct = useSelector(selectCurrentProduct);
+
+ 
 
   return (
     <>
@@ -52,13 +54,14 @@ const ProductPage = () => {
 
           {currentProduct && (
             <div className="flex gap-10 md:flex-row flex-col items-center md:items-start">
-              <Carousel images={currentProduct.images} />
+              <Carousel images={currentProduct.images} imagesSmall={currentProduct.imagesSmall}/>
               <ProductDescription
                 name={currentProduct.name}
                 description={currentProduct.description}
               />
             </div>
           )}
+          
         </div>
       </section>
       {/* <Footer /> */}

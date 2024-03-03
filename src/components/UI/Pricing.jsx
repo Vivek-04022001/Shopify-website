@@ -30,7 +30,7 @@ const Pricing = () => {
             Explore Our <span className="highlight">Digital Offerings</span> and
             Pricing
           </h2>
-          <h2 className="highlight mt-8 text-xl font-bold">Our Offers</h2>
+          <h3 className="highlight mt-8 text-xl font-bold">Our Offers</h3>
 
           <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-x-4  md:items-center ">
             {/* <!-- Pricing Card 1 --> */}
