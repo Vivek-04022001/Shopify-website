@@ -10,7 +10,7 @@ const RenderList = ({ list }) => {
 
     const highlighted = (
       <>
-        <span className="bg-white p-1 mr-1  text-black/80 font-semibold ">
+        <span className="text-white p-1 mr-1 font-bold underline decoration-solid">
           {parts[0]}{" "}
         </span>
         <span>: {parts[1]}</span>

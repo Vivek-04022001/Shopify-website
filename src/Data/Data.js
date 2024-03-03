@@ -166,7 +166,7 @@ const Data = [
   {
     id: 2,
     Offer: "Pro",
-    price: "₹394",
+    price: "₹592",
     subHeading: "Supercharge Your Digital Marketing Skills!",
     products: [
       {
@@ -260,7 +260,7 @@ const Data = [
   {
     id: 3,
     Offer: "Arsenal",
-    price: "₹592",
+    price: "₹952",
     subHeading: "Dominate the Digital Landscape with Ultimate Digital Arsenal!",
 
     products: [
