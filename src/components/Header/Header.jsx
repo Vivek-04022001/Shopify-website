@@ -59,10 +59,11 @@ const Header = () => {
   ];
   return (
     <header ref={headerRef} id="header">
-      <div className="Container  ">
+      <div className="Container ">
+        {/* desktop menu */}
         <div className="flex items-center justify-between ">
-          <div className=" w-[110px] md:w-[150px] ">
-            <img src={Logo} alt="logo" className="w-full" />
+          <div className=" w-[110px] md:w-[150px] z-50">
+            <img src={Logo} alt="logo" className="w-full " />
           </div>
           {/* --navigation-- */}
           <div ref={menuRef} className="navigation">
@@ -95,7 +96,7 @@ const Header = () => {
           id="menu"
           class={`${
             hamburger ? "flex" : "hidden"
-          } md:hidden bg-black  absolute top-0 bottom-0 left-0 flex flex-col  self-end  w-full min-h-screen  pt-32 pl-20 space-y-8  uppercase bg-dark z-10`}
+          } md:hidden bg-black container min-h-screen absolute top-0 left-0 flex flex-col  self-end    pt-32 pl-20 space-y-8  uppercase bg-dark z-10`}
         >
          {menuItems.map((item) => (
             <a key={item} href={`#${item}`} onClick={toggleMenu}>
@@ -103,6 +104,7 @@ const Header = () => {
             </a>
           ))}
         </div>
+        
       </div>
     </header>
   );
