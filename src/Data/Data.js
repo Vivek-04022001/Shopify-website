@@ -154,13 +154,13 @@ const Data = [
         imageUrl: EmailMarketingHacks,
         imageUrlsmall: EmailMarketingHacksSmall,
       },
-      {
-        title: "14200+ Canva Templates",
-        description:
-          "Simplify your design process with our collection of Canva templates.",
-        imageUrl: CanvaTemplates,
-        imageUrlsmall: CanvaTemplatesSmall,
-      },
+      // {
+      //   title: "14200+ Canva Templates",
+      //   description:
+      //     "Simplify your design process with our collection of Canva templates.",
+      //   imageUrl: CanvaTemplates,
+      //   imageUrlsmall: CanvaTemplatesSmall,
+      // },
     ],
   },
   {
@@ -234,13 +234,13 @@ const Data = [
         imageUrl: EmailMarketingHacks,
         imageUrlsmall: EmailMarketingHacksSmall,
       },
-      {
-        title: "14200+ Canva Templates",
-        description:
-          "Simplify your design process with our collection of Canva templates.",
-        imageUrl: CanvaTemplates,
-        imageUrlsmall: CanvaTemplatesSmall,
-      },
+      // {
+      //   title: "14200+ Canva Templates",
+      //   description:
+      //     "Simplify your design process with our collection of Canva templates.",
+      //   imageUrl: CanvaTemplates,
+      //   imageUrlsmall: CanvaTemplatesSmall,
+      // },
       {
         title: "YouTube Growth Bundle",
         description:
@@ -343,13 +343,13 @@ const Data = [
         imageUrl: EmailMarketingHacks,
         imageUrlsmall: EmailMarketingHacksSmall,
       },
-      {
-        title: "14200+ Canva Templates",
-        description:
-          "Simplify your design process with our collection of Canva templates.",
-        imageUrl: CanvaTemplates,
-        imageUrlsmall: CanvaTemplatesSmall,
-      },
+      // {
+      //   title: "14200+ Canva Templates",
+      //   description:
+      //     "Simplify your design process with our collection of Canva templates.",
+      //   imageUrl: CanvaTemplates,
+      //   imageUrlsmall: CanvaTemplatesSmall,
+      // },
       {
         title: "YouTube Growth Bundle",
         description:
@@ -472,30 +472,30 @@ export const Products = [
     images:[emailMarketingHacks1]
   },
 
-  {
-    name: "14200+_Canva_Templates",
-    description: {
-      h1_title: "14200+ Canva Templates",
-      h2_title: "Explore Your Creativity with 14,200+ Canva Templates",
-      h3_title1: "Features for Effortless Design",
-      h3_list1: [
-        "Diverse Collection: Discover over 14,200 Canva templates covering a wide range of categories for your projects.",
-        "Time Efficiency: Save hours with instant access to ready-made templates, minimizing the effort in your design process.",
-        "Consistent Quality: Enjoy consistently high-quality designs to ensure your creations shine.",
-        "User-Friendly Editing: Customize templates easily with accessible tools, bringing your ideas to life in no time.",
-      ],
-      h3_title2: " ",
-      h3_list2: [],
+  // {
+  //   name: "14200+_Canva_Templates",
+  //   description: {
+  //     h1_title: "14200+ Canva Templates",
+  //     h2_title: "Explore Your Creativity with 14,200+ Canva Templates",
+  //     h3_title1: "Features for Effortless Design",
+  //     h3_list1: [
+  //       "Diverse Collection: Discover over 14,200 Canva templates covering a wide range of categories for your projects.",
+  //       "Time Efficiency: Save hours with instant access to ready-made templates, minimizing the effort in your design process.",
+  //       "Consistent Quality: Enjoy consistently high-quality designs to ensure your creations shine.",
+  //       "User-Friendly Editing: Customize templates easily with accessible tools, bringing your ideas to life in no time.",
+  //     ],
+  //     h3_title2: " ",
+  //     h3_list2: [],
 
-      h3_title3: "How These Templates Make Your Experience Better",
-      h3_description3:
-        "Gain access to a diverse content library that facilitates easy creation of visually appealing content. Explore numerous possibilities to fuel your creativity and present polished, professional designs that make a lasting impression on your audience.",
-      h3_title4: "Ready to Simplify Your Creativity?",
-      h3_description4:
-        "Immerse yourself in a world of design possibilities. Simplify your projects with 14,200+ Canva Templates today. Your creative journey begins now – start designing",
-    },
-    images:[canva1]
-  },
+  //     h3_title3: "How These Templates Make Your Experience Better",
+  //     h3_description3:
+  //       "Gain access to a diverse content library that facilitates easy creation of visually appealing content. Explore numerous possibilities to fuel your creativity and present polished, professional designs that make a lasting impression on your audience.",
+  //     h3_title4: "Ready to Simplify Your Creativity?",
+  //     h3_description4:
+  //       "Immerse yourself in a world of design possibilities. Simplify your projects with 14,200+ Canva Templates today. Your creative journey begins now – start designing",
+  //   },
+  //   images:[canva1]
+  // },
 
   {
     name: "InstaMotion_Marvels",
