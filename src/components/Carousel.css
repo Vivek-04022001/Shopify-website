@@ -1,0 +1,41 @@
+.glowing-image-root {
+  position: relative;
+  border-radius: 0.6rem;
+}
+
+.glowing-image-root::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--img-url);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* z-index: -1; */
+  border-radius: inherit;
+  /* You can change these values until it looks fine to you */
+  filter: blur(8rem) saturate(2);
+  animation: glow 1100ms ease-in-out alternate infinite;
+}
+
+@media (min-width: 768px) {
+  .glowing-image-root::before {
+    filter: blur(15rem) saturate(2);
+    /* Add any other styles you want to apply to medium devices and above here */
+  }
+}
+
+@keyframes glow {
+  0% {
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(0.98);
+  }
+  75% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.91);
+  }
+}

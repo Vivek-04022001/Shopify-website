@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useState } from "react";
 import LazyImg from "./LazyImg";
+import "./Carousel.css";
 
 const Carousel = ({ images, imagesSmall }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -15,8 +16,13 @@ const Carousel = ({ images, imagesSmall }) => {
   return (
     <>
       <div className="w-full px-4 md:w-1/2">
-        <div className="carousel w-full ">
-          <div className="carousel-item relative w-full">
+        <div className="carousel w-full overflow-visible px-5 md:px-0">
+          <div
+            className="carousel-item relative w-full glowing-image-root "
+            style={{
+              "--img-url": `url(${imagesSmall[currentImageIndex]})`,
+            }}
+          >
             {images && images.length > 0 ? ( // Error handling
               <LazyImg
                 imageUrl={images[currentImageIndex]}
@@ -25,8 +31,6 @@ const Carousel = ({ images, imagesSmall }) => {
             ) : (
               <div className="error-message">No images available</div> // Placeholder for error state
             )}
-
-            
 
             {images &&
               images.length > 1 && ( // Error handling
