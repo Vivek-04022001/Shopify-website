@@ -19,12 +19,7 @@ const Counter = () => {
   //retrieve countdown values from localStorage on component mount
   useEffect(() => {
     const storedCountdown = JSON.parse(localStorage.getItem("countdown"));
-    // if (storedCountdown) {
-    //   setDays(storedCountdown.days);
-    //   setHours(storedCountdown.hours);
-    //   setMinutes(storedCountdown.minutes);
-    //   setSeconds(storedCountdown.seconds);
-    // }
+    
   }, []);
 
   const updateCountdown = () => {

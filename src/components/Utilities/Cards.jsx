@@ -19,7 +19,7 @@ const Cards = ({ type }) => {
 
   return (
     <>
-      <h2 className="heading mt-4 rounded-lg border border-dashed px-8 py-4 text-2xl font-bold tracking-widest">
+      <h2 className="heading mt-4 rounded-lg border border-dashed px-8 py-4 text-sm md:text-2xl font-bold tracking-widest">
         Products Quantity: {selectedData.length}
       </h2>
       <div className="items-between mt-4 grid  w-full grid-cols-1  gap-20 md:grid-cols-2 ">

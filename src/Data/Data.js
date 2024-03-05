@@ -161,6 +161,7 @@ const Data = [
     id: 1,
     Offer: "Mega",
     price: "₹295",
+    salePrice:'₹197',
     subHeading: "Elevate Your Venture with Shopify Mega Bundle",
     products: [
       {
@@ -220,6 +221,7 @@ const Data = [
     id: 2,
     Offer: "Pro",
     price: "₹592",
+    salePrice:'₹295',
     subHeading: "Supercharge Your Digital Marketing Skills!",
     products: [
       {
@@ -314,6 +316,7 @@ const Data = [
     id: 3,
     Offer: "Arsenal",
     price: "₹952",
+    salePrice:'₹394',
     subHeading: "Dominate the Digital Landscape with Ultimate Digital Arsenal!",
 
     products: [
