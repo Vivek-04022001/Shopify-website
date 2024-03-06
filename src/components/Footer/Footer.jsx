@@ -62,22 +62,22 @@ const Footer = () => {
               </button>
             </Link>
             <Link to="/termsandconditions">
-              <a className="link-hover link">Terms & Conditions</a>
+              <span className="link-hover link">Terms & Conditions</span>
             </Link>
             <Link to="privacy-policy">
-              <a className="link-hover link">Privacy Policy</a>
+              <span className="link-hover link">Privacy Policy</span>
             </Link>
             <Link to="return-refund-policy">
-              <a className="link-hover link">Return & Refund Policy</a>
+              <span className="link-hover link">Return & Refund Policy</span>
             </Link>
             <Link to="/shipping">
-              <a className="link-hover link">Shipping & Delivery Policy</a>
+              <span className="link-hover link">Shipping & Delivery Policy</span>
             </Link>
             <Link to="/disclaimer">
-              <a className="link-hover link">Disclaimer</a>
+              <span className="link-hover link">Disclaimer</span>
             </Link>
             <Link to="/contact">
-              <a className="link-hover link">Contact</a>
+              <span className="link-hover link">Contact</span>
             </Link>
           </nav>
         </div>

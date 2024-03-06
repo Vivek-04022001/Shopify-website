@@ -1,6 +1,5 @@
 import { useState } from "react";
 import "../styles/hero.css";
-
 import thumbnail from "../../assets/video_thumbnail.png";
 import thumbnail_small from "../../assets/video_thumbnail_small.png";
 const Hero = () => {
@@ -38,7 +37,7 @@ const Hero = () => {
               ></iframe>
             ) : (
               <img
-                src={thumbnail_small} // smaller image for smaller screens
+                src={thumbnail_small}// smaller image for smaller screens
                 srcSet={`${thumbnail} 1500w, ${thumbnail_small} 1000w, `}
                 sizes="(min-width: 1500px) 1500px, (min-width: 1000px) 1000px, 500px"
                 alt="Video Thumbnail"

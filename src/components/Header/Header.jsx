@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import Logo from "../../assets/Dark Mode.png";
-
 import "./header.css";
-import BubbleText from "../BubbleText";
+
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -43,10 +42,10 @@ const Header = () => {
     setHamburger((prev) => !prev);
     menuRef.current.classList.toggle("menu__active");
     if (hamburger) {
-      // Menu is closing, remove overflow-hidden class
+      // Menu is closing, remove overflow-hidden className
       document.body.classList.remove("overflow-hidden");
     } else {
-      // Menu is opening, add overflow-hidden class
+      // Menu is opening, add overflow-hidden className
       document.body.classList.add("overflow-hidden");
     }
   };
@@ -75,39 +74,28 @@ const Header = () => {
                   className="hover:text-primary duration-300 transition-all"
                 >
                   <a href={`#${item}`}>
-                    <BubbleText>{item}</BubbleText>
+                  {item.charAt(0).toUpperCase() + item.slice(1)}
                   </a>
                 </li>
               ))}
             </ul>
-            {/* <ul className="hidden md:flex items-center gap-10 text-white capitalize">
-              {menuItems.map((item) => (
-                <li
-                  key={item}
-                  className="hover:text-primary duration-300 transition-all"
-                >
-                  <a href={`#${item}`}>
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
-                  </a>
-                </li>
-              ))}
-            </ul> */}
+           
           </div>
 
           <span
             className={`block md:hidden hamburger  ${hamburger ? "open" : ""}`}
             onClick={toggleMenu}
           >
-            <span class="hamburger-top"></span>
-            <span class="hamburger-middle"></span>
-            <span class="hamburger-bottom"></span>
+            <span className="hamburger-top"></span>
+            <span className="hamburger-middle"></span>
+            <span className="hamburger-bottom"></span>
           </span>
         </div>
 
         {/* mobile menu */}
         <div
           id="menu"
-          class={`${
+          className={`${
             hamburger ? "flex" : "hidden"
           } md:hidden bg-black container min-h-screen absolute top-0 left-0 flex flex-col  self-end    pt-32 pl-20 space-y-8  uppercase bg-dark z-10`}
         >

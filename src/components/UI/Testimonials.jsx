@@ -96,8 +96,8 @@ const SwipeCarousel = () => {
 
   return (
     <div className="Container relative overflow-hidden  py-8 " id="testimonial">
-      <div class="absolute left-0 top-0 z-10  h-full w-1/4 bg-gradient-to-l from-transparent from-10% to-backgroundColor to-100%"></div>
-      <div class="absolute right-0 top-0 z-10 h-full w-1/4 bg-gradient-to-l from-backgroundColor from-10% to-transparent to-100% "></div>
+      <div className="absolute left-0 top-0 z-10  h-full w-1/4 bg-gradient-to-l from-transparent from-10% to-backgroundColor to-100%"></div>
+      <div className="absolute right-0 top-0 z-10 h-full w-1/4 bg-gradient-to-l from-backgroundColor from-10% to-transparent to-100% "></div>
       <motion.div
         drag="x"
         dragConstraints={{
@@ -164,8 +164,8 @@ const Images = ({ imgIndex, imgs }) => {
               alt={imageUrl}
               loading="lazy"
             />
-            <div class="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
-              <div class="pr-3 font-medium text-gray-900 dark:text-white">
+            <div className="flex items-center divide-x-2 divide-gray-500 dark:divide-gray-700">
+              <div className="pr-3 font-medium text-gray-900 dark:text-white">
                 {name}
               </div>
             </div>
