@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Logo from "../../assets/Dark Mode.png";
 
 import "./header.css";
+import BubbleText from "../BubbleText";
 
 const Header = () => {
   const headerRef = useRef(null);
@@ -74,11 +75,23 @@ const Header = () => {
                   className="hover:text-primary duration-300 transition-all"
                 >
                   <a href={`#${item}`}>
-                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                    <BubbleText>{item}</BubbleText>
                   </a>
                 </li>
               ))}
             </ul>
+            {/* <ul className="hidden md:flex items-center gap-10 text-white capitalize">
+              {menuItems.map((item) => (
+                <li
+                  key={item}
+                  className="hover:text-primary duration-300 transition-all"
+                >
+                  <a href={`#${item}`}>
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
+                  </a>
+                </li>
+              ))}
+            </ul> */}
           </div>
 
           <span
@@ -98,13 +111,12 @@ const Header = () => {
             hamburger ? "flex" : "hidden"
           } md:hidden bg-black container min-h-screen absolute top-0 left-0 flex flex-col  self-end    pt-32 pl-20 space-y-8  uppercase bg-dark z-10`}
         >
-         {menuItems.map((item) => (
+          {menuItems.map((item) => (
             <a key={item} href={`#${item}`} onClick={toggleMenu}>
               {item.charAt(0).toUpperCase() + item.slice(1)}
             </a>
           ))}
         </div>
-        
       </div>
     </header>
   );

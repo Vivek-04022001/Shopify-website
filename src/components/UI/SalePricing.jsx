@@ -31,7 +31,7 @@ const SalePricing = () => {
             Pricing
           </h2>
           <h2 className="highlight mt-8 text-xl font-bold">Our Offers</h2>
-          <h2 className=" w-1/2 mx-auto py-2 relative mt-2 text-xl uppercase font-bold border-2 border-dashed inline-block">
+          <h2 className=" inline-block px-6 md:px-10 mx-auto py-2 relative mt-2 text-xl uppercase font-bold border-2 border-dashed ">
             <p>sale is live</p>
             <div className="absolute  -top-1 -right-1 animate-ping w-4 h-4  text-white bg-primary rounded-badge"></div>
           </h2>

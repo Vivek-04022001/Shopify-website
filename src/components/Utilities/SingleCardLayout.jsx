@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import LazyImg from "../LazyImg";
 import { Link, useNavigate } from "react-router-dom";
+import DottedButton from "../DottedButton";
 
 const SingleCardLayout = ({
   data: { title, description, imageUrl, imageUrlsmall },
@@ -28,14 +29,20 @@ const SingleCardLayout = ({
 
         {!isSpecialTitle && (
           <Link to={`/product_page/${title}`} target="_blank">
+            <DottedButton>Read More</DottedButton>
+          </Link>
+        )}
+        {/* {!isSpecialTitle && (
+          <Link to={`/product_page/${title}`} target="_blank">
             <button className="bg-white inline-block w-1/2 text-secondary py-2 font-bold text-md md:text-lg">
               Read More
             </button>
           </Link>
-        )}
+        )} */}
       </div>
     </motion.div>
   );
 };
+
 
 export default SingleCardLayout;

@@ -42,21 +42,21 @@ import shopifythemes2 from "../assets/Showcase/shopifythemes/2nd.png";
 import shopifythemes3 from "../assets/Showcase/shopifythemes/3rd.png";
 import shopifythemes4 from "../assets/Showcase/shopifythemes/4th.png";
 
-import shopifythemes1small from "../assets/Showcase2/shopifythemes/1st.jpg";
-import shopifythemes2small from "../assets/Showcase2/shopifythemes/2nd.jpg";
-import shopifythemes3small from "../assets/Showcase2/shopifythemes/3rd.jpg";
-import shopifythemes4small from "../assets/Showcase2/shopifythemes/4th.jpg";
+import shopifythemes1small from "../assets/Showcase2/shopifythemes/1st.png";
+import shopifythemes2small from "../assets/Showcase2/shopifythemes/2nd.png";
+import shopifythemes3small from "../assets/Showcase2/shopifythemes/3rd.png";
+import shopifythemes4small from "../assets/Showcase2/shopifythemes/4th.png";
 
 
 // Dropshipping Mastery
 import dropshipping1 from '../assets/Showcase/dropshipping/1st.png'
 
-import dropshipping1small from '../assets/Showcase2/dropshipping/1st.jpg'
+import dropshipping1small from '../assets/Showcase2/dropshipping/1st.png'
 
 // Email Marketing Hacks
 import emailMarketingHacks1 from '../assets/Showcase/emailmarketing/1st.png'
 
-import emailMarketingHacks1small from '../assets/Showcase2/emailmarketing/1st.jpg'
+import emailMarketingHacks1small from '../assets/Showcase2/emailmarketing/1st.png'
 
 
 
@@ -71,10 +71,10 @@ import instamotion2 from '../assets/Showcase/8000+stories/2nd.png'
 import instamotion3 from '../assets/Showcase/8000+stories/3rd.gif'
 import instamotion4 from '../assets/Showcase/8000+stories/4th.gif'
 
-import instamotion1small from '../assets/Showcase2/8000+stories/1st.jpg'
-import instamotion2small from '../assets/Showcase2/8000+stories/2nd.jpg'
-import instamotion3small from '../assets/Showcase2/8000+stories/3rd.gif'
-import instamotion4small from '../assets/Showcase2/8000+stories/4th.gif'
+import instamotion1small from '../assets/Showcase2/8000+stories/1st.png'
+import instamotion2small from '../assets/Showcase2/8000+stories/2nd.png'
+import instamotion3small from '../assets/Showcase2/8000+stories/3rd.png'
+import instamotion4small from '../assets/Showcase2/8000+stories/4th.png'
 
 
 
@@ -84,39 +84,39 @@ import socialMedia2 from '../assets/Showcase/socialmediapack/2nd.png'
 import socialMedia3 from '../assets/Showcase/socialmediapack/3rd.gif'
 import socialMedia4 from '../assets/Showcase/socialmediapack/4th.gif'
 
-import socialMedia1small from '../assets/Showcase2/socialmediapack/1st.jpg'
-import socialMedia2small from '../assets/Showcase2/socialmediapack/2nd.jpg'
-import socialMedia3small from '../assets/Showcase2/socialmediapack/3rd.gif'
-import socialMedia4small from '../assets/Showcase2/socialmediapack/4th.gif'
+import socialMedia1small from '../assets/Showcase2/socialmediapack/1st.png'
+import socialMedia2small from '../assets/Showcase2/socialmediapack/2nd.png'
+import socialMedia3small from '../assets/Showcase2/socialmediapack/3rd.png'
+import socialMedia4small from '../assets/Showcase2/socialmediapack/4th.png'
 
 // ai image library
 import aiImage1 from '../assets/Showcase/ailibrary/1st.png'
 import aiImage2 from '../assets/Showcase/ailibrary/2nd.png'
 import aiImage3 from '../assets/Showcase/ailibrary/3rd.png'
 
-import aiImage1small from '../assets/Showcase2/ailibrary/1st.jpg'
-import aiImage2small from '../assets/Showcase2/ailibrary/2nd.jpg'
-import aiImage3small from '../assets/Showcase2/ailibrary/3rd.jpg'
+import aiImage1small from '../assets/Showcase2/ailibrary/1st.png'
+import aiImage2small from '../assets/Showcase2/ailibrary/2nd.png'
+import aiImage3small from '../assets/Showcase2/ailibrary/3rd.png'
 
 // Youtube growth bundle
 import youtube1 from '../assets/Showcase/youtubegrowth/1st.png'
 import youtube2 from '../assets/Showcase/youtubegrowth/2nd.png'
 
-import youtube1small from '../assets/Showcase2/youtubegrowth/1st.jpg'
-import youtube2small from '../assets/Showcase2/youtubegrowth/2nd.jpg'
+import youtube1small from '../assets/Showcase2/youtubegrowth/1st.png'
+import youtube2small from '../assets/Showcase2/youtubegrowth/2nd.png'
 
 // Instagram Mastery course
 import instagram1 from '../assets/Showcase/instagramgrowth/1st.png'
 import instagram2 from '../assets/Showcase/instagramgrowth/2nd.png'
 
 
-import instagram1small from '../assets/Showcase2/instagramgrowth/1st.jpg'
-import instagram2small from '../assets/Showcase2/instagramgrowth/2nd.jpg'
+import instagram1small from '../assets/Showcase2/instagramgrowth/1st.png'
+import instagram2small from '../assets/Showcase2/instagramgrowth/2nd.png'
 
 // Shade fusion pack
 import shade1 from '../assets/Showcase/5000+gradientoverlays/1st.png'
 
-import shade1small from '../assets/Showcase2/5000+gradientoverlays/1st.jpg'
+import shade1small from '../assets/Showcase2/5000+gradientoverlays/1st.png'
 
 
 // lightroom
@@ -124,9 +124,9 @@ import light1 from '../assets/Showcase/lightroompresets/1st.png'
 import light2 from '../assets/Showcase/lightroompresets/2nd.png'
 import light3 from '../assets/Showcase/lightroompresets/3rd.png'
 
-import light1small from '../assets/Showcase2/lightroompresets/1st.jpg'
-import light2small from '../assets/Showcase2/lightroompresets/2nd.jpg'
-import light3small from '../assets/Showcase2/lightroompresets/3rd.jpg'
+import light1small from '../assets/Showcase2/lightroompresets/1st.png'
+import light2small from '../assets/Showcase2/lightroompresets/2nd.png'
+import light3small from '../assets/Showcase2/lightroompresets/3rd.png'
 
 
 
@@ -137,23 +137,30 @@ import chroma3 from '../assets/Showcase/videogradient/3rd.png'
 import chroma4 from '../assets/Showcase/videogradient/4th.png'
 import chroma5 from '../assets/Showcase/videogradient/5th.png'
 
-import chroma1small from '../assets/Showcase2/videogradient/1st.jpg'
-import chroma2small from '../assets/Showcase2/videogradient/2nd.jpg'
-import chroma3small from '../assets/Showcase2/videogradient/3rd.jpg'
-import chroma4small from '../assets/Showcase2/videogradient/4th.jpg'
-import chroma5small from '../assets/Showcase2/videogradient/5th.jpg'
+// import chroma1small from '../assets/Showcase2/videogradient/1st.jpg'
+// import chroma2small from '../assets/Showcase2/videogradient/2nd.jpg'
+// import chroma3small from '../assets/Showcase2/videogradient/3rd.jpg'
+// import chroma4small from '../assets/Showcase2/videogradient/4th.jpg'
+// import chroma5small from '../assets/Showcase2/videogradient/5th.jpg'
+
+
+import chroma1small from '../assets/Showcase2/videogradient/1st.png'
+import chroma2small from '../assets/Showcase2/videogradient/2nd.png'
+import chroma3small from '../assets/Showcase2/videogradient/3rd.png'
+import chroma4small from '../assets/Showcase2/videogradient/4th.png'
+import chroma5small from '../assets/Showcase2/videogradient/5th.png'
 
 // motion marvels
 import motionMarvel1 from '../assets/Showcase/2000+motionmarvels/1st.png'
 import motionMarvel2 from '../assets/Showcase/2000+motionmarvels/2nd.png'
 import motionMarvel3 from '../assets/Showcase/2000+motionmarvels/3rd.png'
 
-import motionMarvel1small from '../assets/Showcase2/2000+motionmarvels/1st.jpg'
-import motionMarvel2small from '../assets/Showcase2/2000+motionmarvels/2nd.jpg'
-import motionMarvel3small from '../assets/Showcase2/2000+motionmarvels/3rd.jpg'
-// Facebook ads hacks
+import motionMarvel1small from '../assets/Showcase2/2000+motionmarvels/1st.png'
+import motionMarvel2small from '../assets/Showcase2/2000+motionmarvels/2nd.png'
+import motionMarvel3small from '../assets/Showcase2/2000+motionmarvels/3rd.png'
+// Facebook ads pngs
 import facebook1 from '../assets/Showcase/facebook/1st.png'
-import facebook1small from '../assets/Showcase2/facebook/1st.jpg'
+import facebook1small from '../assets/Showcase2/facebook/1st.png'
 
 
 const Data = [

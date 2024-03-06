@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const LazyImg = ({ imageUrl, imageUrlsmall }) => {
+const LazyImg = ({ imageUrl, imageUrlsmall, className, onClick }) => {
   const [isImageLoaded, setIsImageLoaded] = useState(false);
   const handleImageLoad = () => {
     setIsImageLoaded(true);
@@ -24,9 +24,18 @@ const LazyImg = ({ imageUrl, imageUrlsmall }) => {
         loading="lazy"
         onLoad={handleImageLoad}
         onError={handleImageError}
+        className={className}
+        onClick={onClick}
+
       />
     </div>
   );
 };
 
+LazyImg.defaultProps = {
+  className: '',
+  onclick:()=>{},
+  
+  
+};
 export default LazyImg;

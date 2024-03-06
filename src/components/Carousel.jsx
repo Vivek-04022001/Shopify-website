@@ -70,24 +70,26 @@ const Carousel = ({ images, imagesSmall }) => {
           </div>
         </div>
 
-        {imagesSmall && imagesSmall.length > 1 ? ( // Error Handling
+        {imagesSmall && imagesSmall.length > 1 ? (
           <div className="minimap flex justify-center space-x-2 mt-4">
-            {imagesSmall.map((image, index) => (
-              <img
-                key={index}
-                src={image}
-                className={
-                  index === currentImageIndex
-                    ? "w-16 h-16 border-2 border-blue-500"
-                    : "w-16 h-16"
-                }
-                onClick={() => handleImageClick(index)}
-                alt={`Carousel thumbnail ${index + 1}`}
-              />
-            ))}
+            {imagesSmall.map((image, index) => {
+              return (
+                <LazyImg
+                  imageUrl={images[index]}
+                  imageUrlsmall={image}
+                  className={
+                    index === currentImageIndex
+                      ? "w-16 h-16 border-2 border-blue-500"
+                      : "w-16 h-16"
+                  }
+                  onClick={() => handleImageClick(index)}
+                />
+              );
+            })}
           </div>
         ) : (
-          <div className="error-message">No thumbnail images available</div>
+          <div className="text-white font-mono text-center
+          mt-2 underline underline-offset-2">No thumbnail images available</div>
         )}
       </div>
     </>
