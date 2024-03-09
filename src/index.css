@@ -59,7 +59,7 @@ body {
 }
 
 .Container {
-  @apply container mx-auto mb-16 max-w-6xl px-6 py-4;
+  @apply container mx-auto mb-6 md:mb-16 max-w-6xl px-6 py-4;
 }
 
 .heading {

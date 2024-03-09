@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const ReturnRefundPolicy = () => {
-  useEffect(()=>{
+  useEffect(() => {
     window.scrollTo(0, 0);
-  },[])
+  }, []);
+  
   return (
     <div className="relative">
       <div className="absolute left-5 top-5 md:left-10 md:top-10 ">
@@ -16,8 +17,6 @@ const ReturnRefundPolicy = () => {
       <div className="Container-other ">
         <h1 className="other-heading">Return & Refund policy</h1>
         <div className="border-t px-6">
-        
-
           <p>
             Thank you for choosing PixelVista for your digital needs. This
             policy outlines our terms and conditions regarding refunds for
