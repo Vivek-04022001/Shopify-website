@@ -15,11 +15,10 @@ const SalePricing = () => {
   const handleClick = (info) => {
     setIsOpen(true);
     setProductInfo(info);
-   
+
     setPaymentLink(() => {
       return `https://pages.razorpay.com/${info.Offer.toLowerCase()}z`;
     });
-
   };
 
   return (
@@ -31,13 +30,10 @@ const SalePricing = () => {
             Pricing
           </h2>
           <h2 className="highlight mt-8 text-xl font-bold">Our Offers</h2>
-          <h2 className=" inline-block px-6 md:px-10 mx-auto py-2 relative mt-2 text-xl uppercase font-bold border-2 border-dashed ">
+          <h2 className=" inline-block px-6 md:px-10 mx-auto py-2 relative mt-2 text-xl uppercase font-bold border-2 border-dashed text-white/70">
             <p>sale is live</p>
             <div className="absolute  -top-1 -right-1 animate-ping w-4 h-4  text-white bg-primary rounded-badge"></div>
           </h2>
-
-          
-          
 
           <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-x-4  md:items-center ">
             {/* <!-- Pricing Card 1 --> */}
@@ -60,7 +56,7 @@ const SalePricing = () => {
               </div>
               {/* <!-- Product List --> */}
               <ul role="list" className="mb-8 space-y-4 text-left">
-                {Mega.products.map(({ title },index) => (
+                {Mega.products.map(({ title }, index) => (
                   <li className="flex items-center space-x-3" key={index}>
                     {/* <!-- Icon --> */}
                     <svg
@@ -79,7 +75,7 @@ const SalePricing = () => {
                   </li>
                 ))}
                 <hr />
-                {Mega.bonus.map(({ title },index) => (
+                {Mega.bonus.map(({ title }, index) => (
                   <li className="flex items-center space-x-3" key={index}>
                     {/* <!-- Icon --> */}
                     <svg
@@ -127,7 +123,7 @@ const SalePricing = () => {
               </div>
               {/* <!-- Product List --> */}
               <ul role="list" className="mb-8 space-y-4 text-left">
-                {Pro.products.map(({ title },index) => (
+                {Pro.products.map(({ title }, index) => (
                   <li className="flex items-center space-x-3" key={index}>
                     {/* <!-- Icon --> */}
                     <svg
@@ -146,7 +142,7 @@ const SalePricing = () => {
                   </li>
                 ))}
                 <hr />
-                {Pro.bonus.map(({ title },index) => (
+                {Pro.bonus.map(({ title }, index) => (
                   <li className="flex items-center space-x-3" key={index}>
                     {/* <!-- Icon --> */}
                     <svg
@@ -194,7 +190,7 @@ const SalePricing = () => {
               </div>
               {/* <!-- Product List --> */}
               <ul role="list" className="mb-8 space-y-4 text-left">
-                {Arsenal.products.map(({ title },index) => (
+                {Arsenal.products.map(({ title }, index) => (
                   <li className="flex items-center space-x-3" key={index}>
                     {/* <!-- Icon --> */}
                     <svg
@@ -213,7 +209,7 @@ const SalePricing = () => {
                   </li>
                 ))}
                 <hr />
-                {Arsenal.bonus.map(({ title },index) => (
+                {Arsenal.bonus.map(({ title }, index) => (
                   <li className="flex items-center space-x-3" key={index}>
                     {/* <!-- Icon --> */}
                     <svg
@@ -243,7 +239,12 @@ const SalePricing = () => {
         </div>
       </div>
       {/*  */}
-      <Modal isOpen={isOpen} onClose={onClose} productInfo={productInfo} paymentLink={paymentLink}/>
+      <Modal
+        isOpen={isOpen}
+        onClose={onClose}
+        productInfo={productInfo}
+        paymentLink={paymentLink}
+      />
     </section>
   );
 };

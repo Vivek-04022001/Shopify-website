@@ -1,12 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 
 const Shipping = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="relative">
       <div className="absolute left-5 top-5 md:left-10 md:top-10 ">
         <Link to="/">
-          <span className="border border-primary p-1 px-3">HOME</span>
+          <span className="border border-primary p-1 px-3 text-white">HOME</span>
         </Link>
       </div>
       <div className="Container-other ">

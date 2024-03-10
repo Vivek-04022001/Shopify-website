@@ -2,7 +2,6 @@ import React, { useRef, useEffect, useState } from "react";
 import Logo from "../../assets/Dark Mode.png";
 import "./header.css";
 
-
 const Header = () => {
   const headerRef = useRef(null);
   const [hamburger, setHamburger] = useState(false);
@@ -74,12 +73,11 @@ const Header = () => {
                   className="hover:text-primary duration-300 transition-all"
                 >
                   <a href={`#${item}`}>
-                  {item.charAt(0).toUpperCase() + item.slice(1)}
+                    {item.charAt(0).toUpperCase() + item.slice(1)}
                   </a>
                 </li>
               ))}
             </ul>
-           
           </div>
 
           <span
@@ -97,7 +95,7 @@ const Header = () => {
           id="menu"
           className={`${
             hamburger ? "flex" : "hidden"
-          } md:hidden bg-black container min-h-screen absolute top-0 left-0 flex flex-col  self-end    pt-32 pl-20 space-y-8  uppercase bg-dark z-10`}
+          } md:hidden bg-black container min-h-screen absolute top-0 left-0 flex flex-col  self-end    pt-32 pl-20 space-y-8  uppercase bg-dark z-10 text-white/80`}
         >
           {menuItems.map((item) => (
             <a key={item} href={`#${item}`} onClick={toggleMenu}>

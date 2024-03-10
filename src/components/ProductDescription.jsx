@@ -3,13 +3,13 @@ import RenderList from "./RenderList";
 
 const ProductDescription = ({ name, description }) => {
   return (
-    <div className="w-full px-4 md:w-1/2 flex flex-col">
+    <div className="w-full px-4 md:w-1/2 flex flex-col  text-white/80">
       <div className="flex flex-col gap-2 px-2 gap-y-4">
         <h1 className="md:text-5xl text-4xl font-bold text-white ">
           {description.h1_title}
         </h1>
 
-        <h2 className="font-bold semi-bold text-xl">{description.h2_title}</h2>
+        <h2 className="font-bold semi-bold text-xl ">{description.h2_title}</h2>
 
         <h3 className="underline underline-offset-4 mt-6">
           {description.h3_title1}

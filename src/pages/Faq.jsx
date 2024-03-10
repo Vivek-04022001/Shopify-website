@@ -9,7 +9,7 @@ const Faq = () => {
     <section className="relative">
       <aside className="absolute left-5 top-5 md:left-10 md:top-10">
         <Link to="/">
-          <span className="border border-primary p-1 px-3">HOME</span>
+          <span className="border border-primary p-1 px-3 text-white">HOME</span>
         </Link>
       </aside>
       <article className="Container-other">

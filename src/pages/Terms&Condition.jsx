@@ -9,7 +9,7 @@ const Terms = () => {
     <div className="relative">
     <div className="absolute top-5 md:top-10 md:left-10 left-5 ">
       <Link to='/'>
-      <span className="border border-primary p-1 px-3">HOME</span>
+      <span className="border border-primary p-1 px-3 text-white">HOME</span>
       </Link>
       </div>  
     
