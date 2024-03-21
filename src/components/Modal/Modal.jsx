@@ -48,12 +48,12 @@ const Modal = ({ isOpen, onClose, productInfo,paymentLink }) => {
                   <span>{productInfo.Offer}</span>
                   <FaArrowRightLong className="ml-2 text-lg" />
                   {/* temporary component */}
-                  <span className="ml-4 rounded-md bg-white px-2 text-secondary ">
-                    {productInfo.salePrice}
-                  </span>
                   {/* <span className="ml-4 rounded-md bg-white px-2 text-secondary ">
-                    {productInfo.price}
+                    {productInfo.salePrice}
                   </span> */}
+                  <span className="ml-4 rounded-md bg-white px-2 text-secondary ">
+                    {productInfo.price}
+                  </span>
                 </h2>
                 {/*  information */}
                 <div className="mx-4">

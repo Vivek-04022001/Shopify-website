@@ -26,10 +26,10 @@ const Home = () => {
         <ShiftingCountdown />
         <Offers />
         <Bonus />
-        {/* <Pricing /> */}
+        <Pricing />
         {/* temporariy component */}
 
-        <SalePricing />
+        {/* <SalePricing /> */}
         <Testimonials />
         <Footer />
       </Suspense>

@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
 
 const SaleAnnouncement = () => {
   return (
-   <section className='bg-secondary '>
-    <div className="container mx-auto max-w-6xl px-6 py-2 ">
-      <h2 className='text-white/70 font-bold text-center tracking-widest text-sm md:text-md'>Sale is live! <span >Check out our new Pricing </span></h2>
-    </div>
-   </section>
-  )
-}
+    <section className="bg-secondary ">
+      <div className="container mx-auto max-w-6xl px-6 py-2 ">
+        <h2 className="text-white/80 font-bold text-center tracking-wider text-sm md:text-md ">
+          Hurry! The sale ends in 24 hours! 🕒 Don't miss out on these amazing
+          Offers! 🛍️🎉
+        </h2>
+      </div>
+    </section>
+  );
+};
 
-export default SaleAnnouncement
+export default SaleAnnouncement;
