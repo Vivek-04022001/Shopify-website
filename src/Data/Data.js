@@ -167,7 +167,7 @@ const Data = [
   {
     id: 1,
     Offer: "Mega",
-    price: "₹295",
+    price: "₹158",
     salePrice:'₹197',
     subHeading: "Elevate Your Venture with Shopify Mega Bundle",
     products: [
@@ -215,19 +215,13 @@ const Data = [
         imageUrl: EmailMarketingHacks,
         imageUrlsmall: EmailMarketingHacksSmall,
       },
-      // {
-      //   title: "14200+ Canva Templates",
-      //   description:
-      //     "Simplify your design process with our collection of Canva templates.",
-      //   imageUrl: CanvaTemplates,
-      //   imageUrlsmall: CanvaTemplatesSmall,
-      // },
+     
     ],
   },
   {
     id: 2,
     Offer: "Pro",
-    price: "₹394",
+    price: "₹266",
     salePrice:'₹295',
     subHeading: "Supercharge Your Digital Marketing Skills!",
     products: [
@@ -322,7 +316,7 @@ const Data = [
   {
     id: 3,
     Offer: "Arsenal",
-    price: "₹592",
+    price: "₹356",
     salePrice:'₹394',
     subHeading: "Dominate the Digital Landscape with Ultimate Digital Arsenal!",
 
@@ -482,7 +476,7 @@ export const Products = [
     description: {
       h1_title: "Dropshipping Mastery",
       h2_title:
-        "Master the Art of Dropshipping: Your Path to Online Business Success",
+        "Master the Art of Dropshipping: Your Path to Online Business Success in this exclusive ebook, available in English language.",
       h3_title1: "Why Choose Our Dropshipping Mastery Course?",
       h3_list1: [
         "Simple Start-up: Learn the ropes of dropshipping and launch your online store without the complexities of handling physical inventory. Our course simplifies the process, saving you time and effort.",
@@ -513,7 +507,7 @@ export const Products = [
     description: {
       h1_title: "Email Marketing Hacks",
       h2_title:
-        "Supercharge Your Business with Practical Email Marketing Strategies",
+        "Supercharge Your Business with Practical Email Marketing Strategies, available as an ebook in English language.",
       h3_title1: "Features That Simplify Your Workflow",
       h3_list1: [
         "Tailored Segmentation: Customize your messages for a personal touch, making your audience feel acknowledged and valued.",
@@ -683,7 +677,7 @@ export const Products = [
     name: "Instagram_Mastery_Course",
     description: {
       h1_title: "Instagram Mastery Course",
-      h2_title: "Master Instagram with Our Easy Course",
+      h2_title: "Master Instagram with Our Easy Course, available as an ebook in English language.",
       h3_title1: "What You'll Learn",
       h3_list1: [
         "Effective Content: Create engaging content that works.",
@@ -831,7 +825,7 @@ export const Products = [
     description: {
       h1_title: "Facebook Ad Hacks",
       h2_title:
-        "Optimize Your Marketing with Facebook Ad Hacks: Boost Your Advertising Success",
+        "Boost Your Advertising Success with Facebook Ad Hacks, available as an ebook in English language.",
       h3_title1: "Features",
       h3_list1: [
         "Precise Targeting: Reach your audience with accuracy, connecting with those who matter.",

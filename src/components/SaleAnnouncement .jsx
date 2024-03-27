@@ -5,8 +5,7 @@ const SaleAnnouncement = () => {
     <section className="bg-secondary ">
       <div className="container mx-auto max-w-6xl px-6 py-2 ">
         <h2 className="text-white/80 font-bold text-center tracking-wider text-sm md:text-md ">
-          Hurry! The sale ends in 24 hours! 🕒 Don't miss out on these amazing
-          Offers! 🛍️🎉
+        Limited time offer: Enjoy special Easter discounts today! 🐰🛍️
         </h2>
       </div>
     </section>
