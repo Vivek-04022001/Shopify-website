@@ -10,7 +10,7 @@ const RenderList = ({ list }) => {
 
     const highlighted = (
       <>
-        <span className="text-white p-1 mr-1 font-bold underline decoration-solid">
+        <span className="text-white p-1 mr-1 font-bold  decoration-solid">
           {parts[0]}{" "}
         </span>
         <span>: {parts[1]}</span>
@@ -21,7 +21,7 @@ const RenderList = ({ list }) => {
   }
   return (
     <ul className="space-y-2">
-      {list.map((row, index) => (
+    {list.map((row, index) => (
         <li
           key={index}
           dangerouslySetInnerHTML={{

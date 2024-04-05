@@ -20,16 +20,16 @@ const Home = () => {
     <div className="relative">
       <Suspense fallback={<Loader />}>
         {/* temporariy component */}
-        <SaleAnnouncement />
+        {/* <SaleAnnouncement /> */}
         <Header />
         <Hero />
         <ShiftingCountdown />
         <Offers />
         <Bonus />
-        <Pricing />
+        {/* <Pricing /> */}
         {/* temporariy component */}
 
-        {/* <SalePricing /> */}
+        <SalePricing />
         <Testimonials />
         <Footer />
       </Suspense>

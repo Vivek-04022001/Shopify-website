@@ -37,7 +37,10 @@ const SalePricing = () => {
 
           <div className="grid w-full grid-cols-1 md:grid-cols-3 gap-y-4 md:gap-x-4  md:items-center ">
             {/* <!-- Pricing Card 1 --> */}
-            <div className="pricing-card-container ">
+            <div className="pricing-card-container relative">
+            <p className="badge badge-lg absolute -top-0 -left-0 -translate-x-0 -translate-y-1/2 bg-black/10 text-white border-dashed border-primary font-mono  px-4 py-6 rounded-xl font-bold tracking-wider shadow-2xl backdrop-blur-md ">
+                Lifetime Updates
+              </p>
               <h3 className="mb-4 text-2xl font-semibold">{Mega.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
                 {Mega.subHeading}
@@ -104,7 +107,10 @@ const SalePricing = () => {
             </div>
 
             {/* Pricing Card 2 */}
-            <div className="pricing-card-container-best ">
+            <div className="pricing-card-container-best relative">
+            <p className="badge badge-lg absolute -top-0 -left-0 -translate-x-0 -translate-y-1/2 bg-black/10 text-white border-dashed border-primary font-mono  px-4 py-6 rounded-xl font-bold tracking-wider shadow-2xl backdrop-blur-md ">
+                Lifetime Updates
+              </p>
               <h3 className="mb-4 text-2xl font-semibold">{Pro.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
                 {Pro.subHeading}
@@ -171,7 +177,10 @@ const SalePricing = () => {
             </div>
 
             {/* Pricing Card 3 */}
-            <div className="pricing-card-container">
+            <div className="pricing-card-container relative">
+            <p className="badge badge-lg absolute -top-0 -left-0 -translate-x-0 -translate-y-1/2 bg-black/10 text-white border-dashed border-primary font-mono  px-4 py-6 rounded-xl font-bold tracking-wider shadow-2xl backdrop-blur-md ">
+                Lifetime Updates
+              </p>
               <h3 className="mb-4 text-2xl font-semibold">{Arsenal.Offer}</h3>
               <p className="font-light  text-gray-400 sm:text-lg">
                 {Arsenal.subHeading}

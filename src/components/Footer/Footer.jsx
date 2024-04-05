@@ -47,7 +47,7 @@ const Footer = () => {
             <a className="link-hover link" href="#testimonial">
               Testimonials
             </a>
-            <Link to='/faq'>
+            <Link to="/faq">
               <button className="link-hover link" href="#">
                 F.A.Q
               </button>
@@ -56,7 +56,7 @@ const Footer = () => {
           {/* legal */}
           <nav className="flex flex-col gap-y-2 w-full  text-center md:text-left  md:w-fit">
             <header className="footer-title ">Legal</header>
-            <Link to='/faq' className="md:hidden">
+            <Link to="/faq" className="md:hidden">
               <button className="link-hover link" href="#">
                 F.A.Q
               </button>
@@ -71,7 +71,9 @@ const Footer = () => {
               <span className="link-hover link">Return & Refund Policy</span>
             </Link>
             <Link to="/shipping">
-              <span className="link-hover link">Shipping & Delivery Policy</span>
+              <span className="link-hover link">
+                Shipping & Delivery Policy
+              </span>
             </Link>
             <Link to="/disclaimer">
               <span className="link-hover link">Disclaimer</span>

@@ -43,12 +43,14 @@ const Pricing = () => {
               <p className="font-light  text-gray-400 sm:text-lg">
                 {Mega.subHeading}
               </p>
+              
               <div className="my-8 flex items-baseline justify-center">
                 <span className="mr-2 text-5xl font-extrabold">
                   {Mega.price}
                 </span>
                 <span className="text-gray-400">/lifetime</span>
               </div>
+              
               {/* <!-- Product List --> */}
               <ul role="list" className="mb-8 space-y-4 text-left">
                 {Mega.products.map(({ title }) => (
