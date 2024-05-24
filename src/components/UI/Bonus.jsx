@@ -8,15 +8,15 @@ import { setProductOptions } from "../../store/productspage/productspageSlice.js
 const priceTag = [
   {
     title: "Mega",
-    price: "₹7499",
+    price: "₹7492",
   },
   {
     title: "Pro",
-    price: "₹12499",
+    price: "₹12496",
   },
   {
     title: "Arsenal",
-    price: "₹18890",
+    price: "₹18850",
   },
 ];
 
